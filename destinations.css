@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap");
+/* FONT POUR LE CHIFFRE (LIEN CI DESSOUS) */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap");
+/* FONT POUR LE NOM DE LA DESTINATION EN QUESTION */
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Source+Code+Pro:ital@0;1&display=swap");
+/* FONT POUR LES SPAN ITEMS */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --main-color: #29d9d5;
+  --text-color: #fff;
+  --background-color-dark: #111;
+  --background-color-light: #222;
+  --secondary-color: #4e4b44;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9px;
+}
+
+body {
+  background-image: url(images/aaabstract.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#navImage {
+    width: 30px;
+    height: 30px;
+  }
+
+section {
+  margin-top: 50px;
+}
+
+nav {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 5%;
+}
+
+nav .logo a {
+  font-size: 3rem;
+  color: #29d9d5;
+}
+nav .logo a span {
+  color: #fff;
+}
+
+.sous-menu {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  padding: 1;
+  margin: 8px;
+  border-radius: 5px;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sous-menu li {
+  padding: 10px 20px;
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sous-menu li:hover a {
+  background-color: #1e90ff;
+}
+
+.sous-menu li a:hover {
+  background-color: #1e90ff;
+}
+
+.navbar li {
+  position: relative;
+}
+
+nav ul li a {
+  padding: 12px;
+}
+
+.navbar li:hover .sous-menu {
+  display: block;
+}
+
+.menu {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  position: relative;
+  margin: 0 15px;
+  list-style-type: none;
+}
+.menu li a {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.menu li:hover .sous-menu {
+  display: block;
+}
+
+/* CSS POUR LA BOX CARD DESTINATION */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.aPropos {
+  text-transform: capitalize;
+  margin: 70px 0;
+  font-weight: bold;
+  color: #29d9d5;
+  position: relative;
+  margin-left: 15px;
+  font-size: 18px;
+}
+.aPropos::after {
+  position: absolute;
+  left: -15px;
+  content: "";
+  height: 100%;
+  background-color: #fff;
+  width: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 900px;
+  background-color: #222222;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.image-container {
+  padding: 15px; /* Ajoute un padding pour créer un "border box" */
+  display: flex; /* Utilise flex pour centrer l'image */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center; /* Centre verticalement */
+  width: calc(
+    100% - 30px
+  ); /* Ajuste la largeur pour prendre en compte le padding */
+  height: calc(
+    100% - 30px
+  ); /* Ajuste la hauteur pour prendre en compte le padding */
+  box-sizing: border-box; /* S'assure que le padding est inclus dans la largeur/hauteur */
+}
+
+.imgAntibes {
+  height: 420px;
+  width: 850px;
+  margin-top: 65px;
+  border-radius: 14px;
+}
+
+.items {
+  color: white;
+  margin: 8px 0;
+}
+
+.itemsWidget {
+  margin: 0;
+  padding: 10px;
+  flex-basis: 45%;
+  color: rgb(0, 0, 0);
+  width: 460px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #29d9d5;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.03rem;
+  display: flex;
+  justify-content: center;
+}
+
+#additionalWidget {
+  margin: 0;
+  padding: 10px;
+  flex-basis: 45%;
+  color: rgb(0, 0, 0);
+  width: 90px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #29d9d5;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.03rem;
+  display: flex;
+  justify-content: center;
+}
+
+.itemsContainer {
+  margin: 20px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.spanItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+#blueColor {
+  font-size: 2.4rem;
+  color: #29d9d5;
+  font-family: "Geologica", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "CRSV" 0, "SHRP" 0;
+}
+
+#blue-title {
+  color: #29d9d5;
+  font-size: large;
+}
+
+#card-number {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+.card-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.itemsText {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.destination-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 40px;
+}
+
+.destination-group {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.destination-item {
+  text-align: center;
+  margin: 20px;
+}
+
+.destination-item img {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+p {
+  color: white;
+}
+
+/* CSS APPERCU ++ */
+
+.title {
+  text-transform: capitalize;
+  margin: 70px 0;
+  font-weight: bold;
+  color: #29d9d5;
+  position: relative;
+  margin-left: 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.title::after {
+  position: absolute;
+  left: -15px;
+  content: "";
+  height: 100%;
+  background-color: #fff;
+  width: 5px;
+  margin-left: 38%;
+}
+
+.card {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 900px;
+  height: auto;
+  background-color: #222222;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.card-items {
+  flex: 2;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.image-card {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img-destinations {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.card-elements {
+  color: white;
+  margin: 8px 0;
+}
+
+#blue-title {
+  color: var(#29d9d5);
+  font-size: large;
+}
+
+
+/* CSS POUR LE FOOTER */
+
+.quote {
+  font-size: 3.2rem;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  margin: 120px 0;
+}
+
+footer {
+  background-color: #222;
+  height: 23vh;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-section h3 {
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.15rem;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* ANIMATION PAR Louis Hoebregts à https://codepen.io/Mamboleoo/pen/BxMQYQ */
+
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Mettre en arrière-plan */
+  overflow: hidden;
+}
+
+.background span {
+  width: 2vmin;
+  height: 2vmin;
+  border-radius: 2vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 45;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+  color: #ffffff;
+  top: 97%;
+  left: 45%;
+  animation-duration: 23s;
+  animation-delay: -10s;
+  transform-origin: 18vw -3vh;
+  box-shadow: 4vmin 0 0.6724764827642848vmin currentColor;
+}
+.background span:nth-child(1) {
+  color: #ffffff;
+  top: 2%;
+  left: 26%;
+  animation-duration: 12s;
+  animation-delay: -17s;
+  transform-origin: -4vw 20vh;
+  box-shadow: -4vmin 0 1.3315107052280846vmin currentColor;
+}
+.background span:nth-child(2) {
+  color: #ffffff;
+  top: 17%;
+  left: 81%;
+  animation-duration: 7s;
+  animation-delay: -15s;
+  transform-origin: 12vw -12vh;
+  box-shadow: 4vmin 0 0.7141990298078333vmin currentColor;
+}
+.background span:nth-child(3) {
+  color: #ffffff;
+  top: 30%;
+  left: 61%;
+  animation-duration: 33s;
+  animation-delay: -8s;
+  transform-origin: 4vw 24vh;
+  box-shadow: 4vmin 0 0.555893828416689vmin currentColor;
+}
+.background span:nth-child(4) {
+  color: #ffffff;
+  top: 57%;
+  left: 78%;
+  animation-duration: 14s;
+  animation-delay: -44s;
+  transform-origin: 14vw 8vh;
+  box-shadow: 4vmin 0 0.6714926425819236vmin currentColor;
+}
+.background span:nth-child(5) {
+  color: #ffffff;
+  top: 78%;
+  left: 26%;
+  animation-duration: 41s;
+  animation-delay: -35s;
+  transform-origin: 19vw 21vh;
+  box-shadow: 4vmin 0 0.6393765403600018vmin currentColor;
+}
+.background span:nth-child(6) {
+  color: #ffffff;
+  top: 37%;
+  left: 10%;
+  animation-duration: 45s;
+  animation-delay: -40s;
+  transform-origin: -16vw 25vh;
+  box-shadow: -4vmin 0 1.0885422560935474vmin currentColor;
+}
+.background span:nth-child(7) {
+  color: #ffffff;
+  top: 72%;
+  left: 99%;
+  animation-duration: 53s;
+  animation-delay: -20s;
+  transform-origin: -8vw -2vh;
+  box-shadow: -4vmin 0 0.7882799405367109vmin currentColor;
+}
+.background span:nth-child(8) {
+  color: #ffffff;
+  top: 37%;
+  left: 76%;
+  animation-duration: 37s;
+  animation-delay: -38s;
+  transform-origin: -21vw 23vh;
+  box-shadow: 4vmin 0 0.7510751065968795vmin currentColor;
+}
+.background span:nth-child(9) {
+  color: #ffffff;
+  top: 22%;
+  left: 17%;
+  animation-duration: 38s;
+  animation-delay: -19s;
+  transform-origin: -12vw -4vh;
+  box-shadow: 4vmin 0 0.5721556223564708vmin currentColor;
+}
+.background span:nth-child(10) {
+  color: #ffffff;
+  top: 6%;
+  left: 58%;
+  animation-duration: 55s;
+  animation-delay: -27s;
+  transform-origin: -17vw 7vh;
+  box-shadow: -4vmin 0 1.3483672574538783vmin currentColor;
+}
+.background span:nth-child(11) {
+  color: #ffffff;
+  top: 22%;
+  left: 46%;
+  animation-duration: 6s;
+  animation-delay: -11s;
+  transform-origin: 7vw 10vh;
+  box-shadow: -4vmin 0 1.3260668332485543vmin currentColor;
+}
+.background span:nth-child(12) {
+  color: #ffffff;
+  top: 68%;
+  left: 94%;
+  animation-duration: 7s;
+  animation-delay: -15s;
+  transform-origin: 9vw 9vh;
+  box-shadow: 4vmin 0 1.3061457613095508vmin currentColor;
+}
+.background span:nth-child(13) {
+  color: #ffffff;
+  top: 66%;
+  left: 10%;
+  animation-duration: 34s;
+  animation-delay: -28s;
+  transform-origin: 20vw 11vh;
+  box-shadow: -4vmin 0 1.104730462261877vmin currentColor;
+}

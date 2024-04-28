@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap");
+
+:root {
+  --color: #29d9d5;
+  --background-color: #111;
+  --color: #fff;
+  --w-column: 200px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+#navImage {
+  width: 30px;
+  height: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 9px;
+}
+
+body {
+  background-color: #111;
+}
+
+nav {
+  background-color: #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  padding: 0 5%;
+}
+
+nav .logo a {
+  font-size: 3rem;
+  color: #29d9d5;
+}
+
+nav .logo a span {
+  color: #fff;
+}
+
+.sous-menu {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 1;
+  margin: 8px;
+  border-radius: 5px;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  /* Example fixed width */
+}
+
+.sous-menu li a {
+  display: block;
+  /* Makes <a> tags fill the entire list item */
+  width: 100%;
+  /* Ensures it takes the full width */
+  padding: 10px 20px;
+  /* Adjust as needed */
+  color: #fff;
+  /* Text color */
+  text-align: center;
+  /* Center the text */
+}
+
+.sous-menu li {
+  /* display: block; */
+  padding: 10px 20px;
+  margin: 0;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sous-menu li:hover a {
+  background-color: #1e90ff;
+}
+
+.sous-menu li a:hover {
+  background-color: #1e90ff;
+}
+
+.navbar li {
+  position: relative;
+}
+
+nav ul li a {
+  padding: 12px;
+}
+
+.navbar li:hover .sous-menu {
+  display: block;
+}
+
+.menu {
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+  margin: 0 15px;
+  list-style-type: none;
+}
+
+.menu li a {
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.menu li:hover .sous-menu {
+  display: block;
+}
+
+.menu.navbar li:hover .sous-menu {
+  display: block;
+}
+
+/* CSS POUR LES DISPLAY DES BATEAUX A LOUER */
+
+div,
+section {
+  border: 1px solid red;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  gap: 150px;
+}
+
+section {
+  height: 100%;
+  margin-top: 100px;
+}
+
+.xl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.xl > img {
+  width: 680px;
+  height: 450px;
+}
+
+.sm > img {
+  height: 200px;
+  width: 300px;
+}
+
+#s2 {
+  width: 100%;
+}
+
+#s2 > div:nth-child(1) {
+  height: 160px;
+}
+
+#s2 > div:nth-child(1) > h3 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#s2 > div:nth-child(1) > h6 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#s2 > div:nth-child(2) {
+  height: 330px;
+}
+
+#s2 > div:nth-child(3) {
+  height: 500px;
+}
+
+button {
+  background-color: #29d9d5;
+  color: white;
+  padding: 10px 180px;
+  margin-top: 16px;
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: block; /* Permet de centrer le bouton */
+  transition: 0.5s;
+}
+
+/* Style pour centrer le texte du bouton */
+button span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+button:hover {
+  background-color: #1aa9a5;
+}
+
+.descriptif-section {
+  padding-top: 15px;
+}
+
+.descriptif {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
+.bold {
+  font-size: 20px;
+  border-bottom: 1px white solid;
+  padding-bottom: 10px;
+  font-weight: initial;
+}
+
+h3,
+h6 {
+  color: white;
+}
+
+#descriptionYacht {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: initial;
+  font-family: "Raleway", sans-serif;
+  line-height: 1.35;
+}
+
+
