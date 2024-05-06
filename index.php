@@ -17,7 +17,7 @@
     <header>
         <nav>
             <div class="logo">
-                <a id="prestigeLogo" href="index.html"> <span>Prestige</span> Yacht</a>
+                <a id="prestigeLogo" href="index.php"> <span>Prestige</span> Yacht</a>
             </div>
             <ul class="menu">
                 <li>
@@ -32,7 +32,15 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="menuNav" href="#">Bâteaux</a>
+                    <a class="menuNav" href="catalogue.php">Bâteaux</a>
+                    <ul class="sous-menu">
+                        <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
+                        <li><a href="yacht.php?id=2">Hadès 2000</a></li>
+                        <li><a href="yacht.php?id=3">Octavius</a></li>
+                        <li><a href="yacht.php?id=4">Le Colossal</a></li>
+                        <li><a href="yacht.php?id=5">Corbac-X</a></li>
+                        <li><a href="yacht.php?id=6">Ventex</a></li>
+                    </ul>
                 </li>
                 <li>
                     <a class="menuNav" href="#a-propos">À propos</a>
@@ -48,18 +56,7 @@
     <section id="home">
         <h1>Prestige Yacht</h1>
         <h4>Naviguez avec Luxe</h4>
-        <div class="recherche">
-            <form action="">
-                <div>
-                    <label for="destinations">Destinations</label>
-                    <input type="search" id="destinations" name="destinations" placeholder="Saisissez une catégorie">
-                </div>
-                <input id="rechercher" type="submit" value="Trouver">
-
-            </form>
-        </div>
     </section>
-
 
     <!-- A propos section -->
     <section id="a-propos">
@@ -87,7 +84,7 @@
         <div class="list">
             <div class="item ">
                 <figure>
-                    <img src="images/black-water.webp">
+                    <img src="images/1/black-water.webp">
                 </figure>
                 <div class="content">
                     <h2>
@@ -105,7 +102,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/hadès-2000.webp">
+                    <img src="images/2/1hadès-2000.jpg">
                 </figure>
                 <div class="content">
                     <h2>
@@ -123,7 +120,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/octavius.webp">
+                    <img src="images/3/octavius.webp">
                 </figure>
                 <div class="content">
                     <h2>
@@ -141,7 +138,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/leColossal.webp">
+                    <img src="images/4/leColossal.webp">
                 </figure>
                 <div class="content">
                     <h2>
@@ -159,7 +156,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/corbac-x.webp">
+                    <img src="images/5/corbac-x.webp">
                 </figure>
                 <div class="content">
                     <h2>
@@ -177,7 +174,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/ventex.webp">
+                    <img src="images/6/ventex.webp">
                 </figure>
                 <div class="content">
                     <h2>
@@ -222,8 +219,8 @@
                 <div class="content" id="carteAntibes">
                     <div>
                         <h4>Antibes</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <p>Plongez dans l'élégance d'Antibes depuis nos yachts exclusifs, </p>
+                        <p>alliant luxe et aventure dans les eaux scintillantes de la Côte d'Azur.</p>
                         <a class="boxDecouvrir" href="antibes.html">Découvrir</a>
                     </div>
                 </div>
@@ -235,8 +232,8 @@
                 <div class="content" id="carteLaManche">
                     <div>
                         <h4>La Manche</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <p>Découvrez la Manche depuis nos yachts exclusifs,</p>
+                        <p>élégance et exploration au rendez-vous.</p>
                         <a class="boxDecouvrir" href="lamanche.html">Découvrir</a>
                     </div>
                 </div>
@@ -248,8 +245,8 @@
                 <div class="content" id="carteMonaco">
                     <div>
                         <h4>Monaco</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <p>Découvrez Monaco depuis nos yachts exclusifs,</p>
+                        <p>luxe et prestige sur la French Riviera.</p>
                         <a class="boxDecouvrir" href="monaco.html">Découvrir</a>
                     </div>
                 </div>
@@ -261,8 +258,8 @@
                 <div class="content" id="carteCorse">
                     <div>
                         <h4>Corse</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <p>Découvrez la Corse depuis nos yachts exclusifs,</p>
+                        <p>luxe et nature dans les eaux cristallines.</p>
                         <a class="boxDecouvrir" href="corse.html">Découvrir</a>
                     </div>
                 </div>
@@ -274,8 +271,8 @@
                 <div class="content" id="carteIbiza">
                     <div>
                         <h4>Ibiza</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <p>Découvrez Ibiza depuis nos yachts exclusifs,</p>
+                        <p>luxe et fête sur la Méditerranée.</p>
                         <a class="boxDecouvrir" href="ibiza.html">Découvrir</a>
                     </div>
                 </div>
@@ -287,8 +284,8 @@
                 <div class="content" id="carteMaldives">
                     <div>
                         <h4>Maldives</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p>Ea iusto ipsa repudiandae amet conseq.</p>
+                        <p>Découvrez les Maldives depuis nos yachts exclusifs,</p>
+                        <p>luxe et beauté entre sable et eaux turquoise.</p>
                         <a class="boxDecouvrir" href="maldives.html">Découvrir</a>
                     </div>
                 </div>

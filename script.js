@@ -124,7 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const destinationElement = document.createElement("div");
       destinationElement.classList.add("destination-item");
       destinationElement.setAttribute("data-url", destination.url);
-      destinationElement.addEventListener("click", function() {
+      destinationElement.addEventListener("click", function () {
         const url = this.getAttribute("data-url");
         window.location.href = url;
       });
@@ -151,30 +151,29 @@ document.addEventListener("DOMContentLoaded", function () {
       groupContainer.appendChild(destinationElement);
     });
 
-// Cela vérifie que previewContainer est bien une instance de HTMLElement pour être sur que la propriété appendChild existe
-if(previewContainer instanceof HTMLElement) {
-  previewContainer.appendChild(groupContainer);
-}
+    // Cela vérifie que previewContainer est bien une instance de HTMLElement pour être sur que la propriété appendChild existe
+    if (previewContainer instanceof HTMLElement) {
+      previewContainer.appendChild(groupContainer);
+    }
 
-  // Sélectionner tous les éléments avec les classes .container et .card
-  const elements = document.querySelectorAll(".container, .card");
+    // Sélectionner tous les éléments avec les classes .container et .card
+    const elements = document.querySelectorAll(".container, .card");
 
-  // Itérer sur chaque élément sélectionné
-  elements.forEach(function (element) {
-    // Ajouter un écouteur d'événement pour détecter le survol de la souris
-    element.addEventListener("mouseenter", function () {
-      // Ajouter l'effet de box shadow lors du survol
-      this.style.boxShadow = "0 0 20px rgba(41, 217, 213, 0.7)"; // Utiliser rgba pour spécifier la couleur avec une transparence de 70%
-      this.style.transition = "box-shadow 0.8s ease";
+    // Itérer sur chaque élément sélectionné
+    elements.forEach(function (element) {
+      // Ajouter un écouteur d'événement pour détecter le survol de la souris
+      element.addEventListener("mouseenter", function () {
+        // Ajouter l'effet de box shadow lors du survol
+        this.style.boxShadow = "0 0 20px rgba(41, 217, 213, 0.7)"; // Utiliser rgba pour spécifier la couleur avec une transparence de 70%
+        this.style.transition = "box-shadow 0.8s ease";
+      });
+
+      // Ajouter un écouteur d'événement pour détecter quand la souris quitte la boîte
+      element.addEventListener("mouseleave", function () {
+        // Retirer l'effet de box shadow lorsque la souris quitte la boîte
+        this.style.boxShadow = "none"; // Retirer l'ombre portée
+        this.style.transition = "box-shadow 0.8s ease";
+      });
     });
-
-    // Ajouter un écouteur d'événement pour détecter quand la souris quitte la boîte
-    element.addEventListener("mouseleave", function () {
-      // Retirer l'effet de box shadow lorsque la souris quitte la boîte
-      this.style.boxShadow = "none"; // Retirer l'ombre portée
-      this.style.transition = "box-shadow 0.8s ease";
-    });
-  });
-
-};
+  }
 });
