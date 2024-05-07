@@ -29,6 +29,9 @@
                     </ul>
                 </li>
                 <li>
+                    <a class="menuNav" href="catalogue.php">Catalogue</a>
+                </li>
+                <li>
                     <a class="menuNav" href="catalogue.php">Bâteaux</a>
                     <ul class="sous-menu">
                         <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
@@ -96,7 +99,10 @@
                             echo '<p>Cabines : ' . $yacht['cabines'] . '</p>';
                             echo '<p>Prix par jour : ' . $yacht['prixParJour'] . ' €</p>';
                             echo '<p>Longueur : ' . $yacht['longueur'] . ' mètres</p>';
-                            echo '<button class="btn-reserver">Réserver</button>';
+                            echo '<div class="button-container">';
+                            echo '<button class="btn-reserver" data-yacht-id="'. $yacht['id_bateaux']. '">Réserver</button>';
+                            echo '<a href="yacht.php?id='. $yacht['id_bateaux']. '" class="btn-voir-plus">Voir Plus</a>';
+                            echo '</div>';
                             echo '</div>';
                             echo '</div>';
                         }

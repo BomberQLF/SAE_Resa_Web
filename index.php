@@ -32,6 +32,9 @@
                     </ul>
                 </li>
                 <li>
+                    <a class="menuNav" href="catalogue.php">Catalogue</a>
+                </li>
+                <li>
                     <a class="menuNav" href="catalogue.php">Bâteaux</a>
                     <ul class="sous-menu">
                         <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
