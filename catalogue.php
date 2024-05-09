@@ -55,6 +55,15 @@
     <main>
         <section id="catalogue">
             <h1>Catalogue de bateaux</h1>
+            <form action="catalogue.php" method="get">
+                <input type="text" name="search" placeholder="Rechercher un modèle...">
+                <button type="submit">Rechercher</button>
+            </form>
+
+            <div id="bateaux">
+                <!-- Les bateaux vont apparaitre ici -->
+            </div>
+
             <div id="tri">
                 <a class="prix-tri" href="catalogue.php?tri=prix-croissant">Prix croissant</a>
                 <a class="prix-tri" href="catalogue.php?tri=prix-decroissant">Prix décroissant</a>
@@ -65,20 +74,14 @@
                 $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
 
                 // Préparation de la requête SQL pour récupérer les détails des bateaux
-                $stmt = $db->prepare("SELECT id_bateaux, modele, vitesse, cabines, prixParJour, description, longueur FROM sae_bateaux");
+                // Si prix-decroissant ne se trouve pas dans l'url, le catalogue classe automatiquement les bateaux par ordre croissant 'ASC'.
+                $orderBy = $_GET['tri'] === 'prix-decroissant' ? 'DESC' : 'ASC';
+
+                $stmt = $db->prepare("SELECT * FROM sae_bateaux WHERE modele LIKE :search ORDER BY prixParJour $orderBy");
+
+                $stmt->bindValue(':search', '%' . $_GET['search'] . '%', PDO::PARAM_STR);
+
                 $stmt->execute();
-
-                // Tri par prix croissant
-                if (isset($_GET['tri']) && $_GET['tri'] == 'prix-croissant') {
-                    $stmt = $db->prepare("SELECT id_bateaux, modele, vitesse, cabines, prixParJour, description, longueur FROM sae_bateaux ORDER BY prixParJour ASC");
-                    $stmt->execute();
-                }
-
-                // Tri par prix décroissant
-                if (isset($_GET['tri']) && $_GET['tri'] == 'prix-decroissant') {
-                    $stmt = $db->prepare("SELECT id_bateaux, modele, vitesse, cabines, prixParJour, description, longueur FROM sae_bateaux ORDER BY prixParJour DESC");
-                    $stmt->execute();
-                }
 
                 // Affichage des détails des bateaux dans le catalogue
                 while ($yacht = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -100,8 +103,8 @@
                             echo '<p>Prix par jour : ' . $yacht['prixParJour'] . ' €</p>';
                             echo '<p>Longueur : ' . $yacht['longueur'] . ' mètres</p>';
                             echo '<div class="button-container">';
-                            echo '<button class="btn-reserver" data-yacht-id="'. $yacht['id_bateaux']. '">Réserver</button>';
-                            echo '<a href="yacht.php?id='. $yacht['id_bateaux']. '" class="btn-voir-plus">Voir Plus</a>';
+                            echo '<a href="formulaire.php?id=' . $yacht['id_bateaux'] . '" id="directionFormulaire" class="btn-reserver" data-yacht-id="' . $yacht['id_bateaux'] . '">Réserver</a>';
+                            echo '<a href="yacht.php?id=' . $yacht['id_bateaux'] . '" class="btn-voir-plus">Voir Plus</a>';
                             echo '</div>';
                             echo '</div>';
                             echo '</div>';

@@ -26,7 +26,7 @@
         $id = $_GET['id'];
 
         // Préparation de la requête SQL pour récupérer les détails du bateau correspondant à l'ID
-        $stmt = $db->prepare("SELECT modele, vitesse, cabines, prixParJour, description, longueur FROM sae_bateaux WHERE id_bateaux = :id");
+        $stmt = $db->prepare("SELECT modele, vitesse, cabines, prixParJour, description, longueur, id_bateaux FROM sae_bateaux WHERE id_bateaux = :id");
         $stmt->bindValue(':id', $id, PDO::PARAM_INT);
         $stmt->execute();
         $yacht = $stmt->fetch(PDO::FETCH_ASSOC);
@@ -119,7 +119,7 @@
                     <div>
                         <h3><?php echo $yacht["modele"]; ?></h3>
                         <h6>Yacht à louer</h6>
-                        <button id="btn-reserver" type="button">Réserver</button>
+                        <a id="lien-reserver" href="formulaire.php?id=<?php echo $yacht['id_bateaux'];?>">Réserver</a>
                     </div>
                     <div class="descriptif-section">
                         <h3 class="descriptif">Prix Par Jours</h3>

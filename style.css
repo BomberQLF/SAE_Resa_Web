@@ -131,7 +131,7 @@ nav ul li a {
 
 #home {
   background: linear-gradient(rgba(0, 0, 0, 0.1), #333),
-    url("images/yachtBackgroundImage.webp");
+    url("images/yachtBackgroundImage.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -168,6 +168,18 @@ nav ul li a {
   padding: 0 10%;
   width: 100%;
 }
+
+#lireHover {
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#lireHover:hover {
+  background-color: #29d9d5;
+  color: black;
+  transition: 0.6s;
+}
+
 .title {
   text-transform: capitalize;
   margin: 70px 0;
@@ -318,7 +330,7 @@ nav ul li a {
   grid-template-rows: 35px;
 }
 
-.carousel .list .more button {
+.carousel .list .more a {
   border-radius: 30px;
   font-family: "League Gothic";
   text-transform: uppercase;
@@ -328,17 +340,25 @@ nav ul li a {
   position: relative;
 }
 
-.carousel .list .more button:nth-child(1) {
+.carousel .list .more a:nth-child(1) {
   background-image: linear-gradient(to right, #81baa0, #46a39c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
-.carousel .list .more button:nth-child(2) {
+.carousel .list .more a:nth-child(2) {
   border: 2px solid transparent;
   background: linear-gradient(#242745, #242745) padding-box,
     linear-gradient(to right, #81baa0, #46a39c) border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem
 }
 
-.carousel .list .more button:nth-child(2) i {
+.carousel .list .more a:nth-child(2) i {
   margin-right: 10px;
 }
 
@@ -612,75 +632,47 @@ footer {
   text-decoration: underline;
 }
 
-/* SIGNUP.PHP --> CSS */
-/* SIGNUP.PHP --> CSS */
-/* SIGNUP.PHP --> CSS */
+/* CSS DERNIÈRS YACHTS  */
 
-.form-section {
-  max-width: 600px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 8px;
-  color: #29d9d5;
-  box-shadow: 3px 2px 10px 2px #29d9d5;
-}
-
-.form-title {
-  color: #29d9d5;
-  text-align: center;
-  font-size: 2.6rem;
-  margin-bottom: 30px; /* Plus d'espace autour du titre pour un look aéré */
-}
-
-.auth-form {
+.yacht-list {
   display: flex;
-  flex-direction: column;
-  gap: 20px; /* Espace uniforme entre les éléments de formulaire */
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.form-group {
-  margin-bottom: 15px; /* Ajustement pour une meilleure répartition de l'espace */
+.yacht-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: 20px;
 }
 
-.button-group-vertical {
-  display: flex;
-  flex-direction: column; /* Les boutons sont empilés verticalement */
-  gap: 10px; /* Espace entre les boutons */
-}
-
-.form-label {
-  display: block;
-  margin-bottom: 5px;
-  color: white;
-}
-
-.form-input {
+.yacht-item img {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px; /* Ajusté pour l'espacement */
-  border: 1px solid #29d9d5;
-  border-radius: 4px;
-  background-color: #000;
-  color: #29d9d5;
+  height: 200px;
+  object-fit: cover;
 }
 
-.form-button {
-  background-color: #29d9d5;
-  color: #111;
-  padding: 10px 20px;
+.yacht-item h2 {
+  margin: 10px 0;
+}
+
+.yacht-item p {
+  margin: 5px 0;
+}
+
+.voir-plus {
+  display: block;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
-.form-button:hover {
-  background-color: #26b3a7;
+.voir-plus:hover {
+  background-color: #45a049;
 }
-
-/* CSS DERNIÈRE ACTIVITÉ */
-
-
-
-

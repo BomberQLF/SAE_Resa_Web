@@ -94,12 +94,8 @@
                         LE BRIDGERTON
                     </h2>
                     <div class="more">
-                        <button>
-                            <a href="yacht.php?id=1">Réserver</a>
-                        </button>
-                        <button>
-                            <a href="yacht.php?id=1">Voir Plus</a>
-                        </button>
+                        <a href="yacht.php?id=1">Réserver</a>
+                        <a href="yacht.php?id=1">Voir Plus</a>
                     </div>
                 </div>
             </div>
@@ -112,12 +108,8 @@
                         HADÈS 2000
                     </h2>
                     <div class="more">
-                        <button>
-                            <a href="yacht.php?id=2">Réserver</a>
-                        </button>
-                        <button>
-                            <a href="yacht.php?id=2">Voir Plus</a>
-                        </button>
+                        <a href="yacht.php?id=2">Réserver</a>
+                        <a href="yacht.php?id=2">Voir Plus</a>
                     </div>
                 </div>
             </div>
@@ -130,12 +122,8 @@
                         OCTAVIUS
                     </h2>
                     <div class="more">
-                        <button>
-                            <a href="yacht.php?id=3">Réserver</a>
-                        </button>
-                        <button>
-                            <a href="yacht.php?id=3">Voir Plus</a>
-                        </button>
+                        <a href="yacht.php?id=3">Réserver</a>
+                        <a href="yacht.php?id=3">Voir Plus</a>
                     </div>
                 </div>
             </div>
@@ -148,12 +136,8 @@
                         LE COLOSSAL
                     </h2>
                     <div class="more">
-                        <button>
-                            <a href="yacht.php?id=4">Réserver</a>
-                        </button>
-                        <button>
-                            <a href="yacht.php?id=4">Voir Plus</a>
-                        </button>
+                        <a href="yacht.php?id=4">Réserver</a>
+                        <a href="yacht.php?id=4">Voir Plus</a>
                     </div>
                 </div>
             </div>
@@ -166,12 +150,8 @@
                         CORBAC-X
                     </h2>
                     <div class="more">
-                        <button>
-                            <a href="yacht.php?id=5">Réserver</a>
-                        </button>
-                        <button>
-                            <a href="yacht.php?id=5">Voir Plus</a>
-                        </button>
+                        <a href="yacht.php?id=5">Réserver</a>
+                        <a href="yacht.php?id=5">Voir Plus</a>
                     </div>
                 </div>
             </div>
@@ -184,12 +164,8 @@
                         VENTEX
                     </h2>
                     <div class="more">
-                        <button>
-                            <a href="yacht.php?id=6">Réserver</a>
-                        </button>
-                        <button>
-                            <a href="yacht.php?id=6">Voir Plus</a>
-                        </button>
+                        <a href="yacht.php?id=6">Réserver</a>
+                        <a href="yacht.php?id=6">Voir Plus</a>
                     </div>
                 </div>
             </div>
@@ -296,6 +272,32 @@
             <!-- boîte -->
         </div>
     </section>
+
+    <div class="yacht-list">
+        <div class="yacht-item">
+            <img src=".jpg" alt="Le Colossal" style="width:100%">
+            <h2>Le Colossal</h2>
+            <p>Prix: 5000€/jour</p>
+            <p>Capacité: 10 personnes</p>
+            <a href="yacht.php?id=4" class="voir-plus">Voir plus</a>
+        </div>
+
+        <div class="yacht-item">
+            <img src="boat2.jpg" alt="Corbac-X" style="width:100%">
+            <h2>Corbac-X</h2>
+            <p>Prix: 6000€/jour</p>
+            <p>Capacité: 12 personnes</p>
+            <a href="yacht.php?id=5" class="voir-plus">Voir plus</a>
+        </div>
+
+        <div class="yacht-item">
+            <img src="boat3.jpg" alt="Ventex" style="width:100%">
+            <h2>Ventex</h2>
+            <p>Prix: 7000€/jour</p>
+            <p>Capacité: 15 personnes</p>
+            <a href="yacht.php?id=6" class="voir-plus">Voir plus</a>
+        </div>
+    </div>
 
     <footer>
         <div class="container">

@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Antibes",
+      "url": "antibes.html",
+      "imageUrl": "images/antibes-marina.jpeg"
+    },
+    {
+      "name": "La Manche",
+      "url": "lamanche.html",
+      "imageUrl": "images/laMancheVignette.jpg"
+    },
+    {
+      "name": "Monaco",
+      "url": "monaco.html",
+      "imageUrl": "images/monacoVignette.jpg"
+    },
+    {
+      "name": "Corse",
+      "url": "corse.html",
+      "imageUrl": "images/corseVignette.jpg"
+    },
+    {
+      "name": "Ibiza",
+      "url": "ibiza.html",
+      "imageUrl": "images/ibizaVignette.jpg"
+    },
+    {
+      "name": "Maldives",
+      "url": "maldives.html",
+      "imageUrl": "images/maldivesVignette.jpg"
+    }
+  ]
+  

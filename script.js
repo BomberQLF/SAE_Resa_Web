@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+  fetch('destinations.json').then(function (response) {
+    response.json().then(function (destinations) {
   // CSS POUR LES APPERCUS
   // Sélectionner la boîte sur laquelle vous voulez appliquer l'effet
 
@@ -74,31 +76,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // JS POUR L'AFFICHAGE DES APPERCUS DES DESTINATIONS
-
-  const destinations = [
-    {
-      name: "Antibes",
-      url: "antibes.html",
-      imageUrl: "images/antibes-marina.jpeg",
-    },
-    {
-      name: "La Manche",
-      url: "lamanche.html",
-      imageUrl: "images/laMancheVignette.jpg",
-    },
-    {
-      name: "Monaco",
-      url: "monaco.html",
-      imageUrl: "images/monacoVignette.jpg",
-    },
-    { name: "Corse", url: "corse.html", imageUrl: "images/corseVignette.jpg" },
-    { name: "Ibiza", url: "ibiza.html", imageUrl: "images/ibizaVignette.jpg" },
-    {
-      name: "Maldives",
-      url: "maldives.html",
-      imageUrl: "images/maldivesVignette.jpg",
-    },
-  ];
 
   const currentUrl = window.location.pathname.split("/").pop();
 
@@ -176,4 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
+});
+});
 });

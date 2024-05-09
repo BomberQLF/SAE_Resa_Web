@@ -341,7 +341,7 @@ h6 {
 .btn-voir-plus {
   width: 48%;
   padding: 10px;
-  background-color: #29d9d5;
+  background-color: #0360c3;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -349,15 +349,36 @@ h6 {
   font-size: 1.6rem;
   text-align: center;
   margin-top: 10px;
+  transition: 0.5s;
 }
 
 .btn-reserver:hover,
 .btn-voir-plus:hover {
-  background-color: #0360c3;
+  background-color: #0d4076;
+}
+
+#lien-reserver {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #29d9d5;
+  color: white;
+  text-decoration: none;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 25px;
+  width: 350px;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+#lien-reserver:hover {
+  background-color: #1aa9a5;
 }
 
 .prix-tri {
   font-size: 1.7rem;
+  margin-right: 10px;
 }
 
 .prix-tri:nth-child(1) {
@@ -388,7 +409,7 @@ form {
   flex-wrap: wrap;
   justify-content: center;
   width: 40%;
-  margin: 100px auto;
+  margin: 50px auto 120px auto;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -422,3 +443,29 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #1aa9a5;
 }
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+section #form-title {
+  color: #29d9d5;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+#prix {
+  display: block;
+  width: 100%;
+  padding: 6px;
+  margin-right: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
