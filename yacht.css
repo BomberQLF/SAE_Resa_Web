@@ -469,3 +469,18 @@ section #form-title {
   border: 1px solid #ccc;
 }
 
+#modele {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.58-4.58c.78-.78 2.05-.78 2.83 0.78.78.78 2.05 0 2.83l-6.58 6.59c-.78.78-2.05.78-2.83 0L4.58 10.67c-.78-.78-.78-2.05 0-2.83.78-.78 2.05-.78 2.83 0z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 16px 16px;
+}
+
+#modele option {
+  padding: 5px;
+}
