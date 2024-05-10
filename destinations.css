@@ -87,7 +87,7 @@ nav .logo a span {
   padding: 10px 20px;
   margin: 0;
   color: #fff;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-align: center;
 }
 
@@ -146,7 +146,7 @@ section {
   color: #29d9d5;
   position: relative;
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 .aPropos::after {
   position: absolute;
@@ -317,7 +317,7 @@ p {
   color: #29d9d5;
   position: relative;
   margin-left: 15px;
-  font-size: 18px;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
 }

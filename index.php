@@ -273,31 +273,30 @@
         </div>
     </section>
 
-    <div class="yacht-list">
-        <div class="yacht-item">
-            <img src=".jpg" alt="Le Colossal" style="width:100%">
-            <h2>PHP</h2>
-            <p>Prix : </p>
-            <p>Cabines :</p>
-            <a href="yacht.php?id=4" class="voir-plus">Voir plus</a>
+    <section class="derniers-bateaux">
+        <h2>Nos derniers modèles</h2>
+        <div class="yacht-list">
+            <?php
+            $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
+            $stmt = $db->prepare("SELECT id_bateaux, modele, cabines, prixParJour, image FROM sae_bateaux ORDER BY id_bateaux DESC LIMIT 3");
+            $stmt->execute();
+            $yachts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            ?>
+            <?php foreach ($yachts as $yacht): ?>
+                <div class="yacht-item">
+                    <img src="data:image/jpeg;base64,<?php echo base64_encode($yacht["image"]); ?>"
+                        alt="Nos bateaux les plus récents" style="width:100%">
+                    <h2 class="yacht-title"><?php echo $yacht["modele"]; ?></h2>
+                    <div class="yacht-details">
+                        <p class="yacht-price">Prix Par Jours : <?php echo $yacht["prixParJour"]; ?>€</p>
+                        <p class="yacht-cabines">Cabines : <?php echo $yacht["cabines"]; ?></p>
+                    </div>
+                    <a href="yacht.php?id=<?php echo $yacht["id_bateaux"]; ?>" class="voir-plus">Voir plus</a>
+                </div>
+            <?php endforeach; ?>
         </div>
+    </section>
 
-        <div class="yacht-item">
-            <img src="boat2.jpg" alt="Corbac-X" style="width:100%">
-            <h2>PHP</h2>
-            <p>Prix :</p>
-            <p>Cabines :</p>
-            <a href="yacht.php?id=5" class="voir-plus">Voir plus</a>
-        </div>
-
-        <div class="yacht-item">
-            <img src="boat3.jpg" alt="Ventex" style="width:100%">
-            <h2>PHP</h2>
-            <p>Prix :</p>
-            <p>Cabines :</p>
-            <a href="yacht.php?id=6" class="voir-plus">Voir plus</a>
-        </div>
-    </div>
 
     <footer>
         <div class="container">
