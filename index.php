@@ -66,7 +66,7 @@
         <h2 class="title">à propos</h2>
         <div class="img-desc">
             <div class="left">
-                <img class="imgAbout" src="images/accueil-yacht.jpeg" alt="image-bateau-bienvenue">
+                <img class="imgAbout" src="images/accueil-yacht.jpg" alt="image-bateau-bienvenue">
             </div>
             <div class="right">
                 <h3>Plongez dans notre fascinante histoire et découvrez nous rapidement.</h3>
@@ -87,7 +87,7 @@
         <div class="list">
             <div class="item ">
                 <figure>
-                    <img src="images/1/black-water.webp">
+                    <img src="images/1/black-water.jpg">
                 </figure>
                 <div class="content">
                     <h2>
@@ -115,7 +115,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/3/octavius.webp">
+                    <img src="images/3/octavius.jpg">
                 </figure>
                 <div class="content">
                     <h2>
@@ -129,7 +129,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/4/leColossal.webp">
+                    <img src="images/4/leColossal.jpg">
                 </figure>
                 <div class="content">
                     <h2>
@@ -143,7 +143,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/5/corbac-x.webp">
+                    <img src="images/5/corbac-x.jpg">
                 </figure>
                 <div class="content">
                     <h2>
@@ -157,7 +157,7 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/6/ventex.webp">
+                    <img src="images/6/ventex.jpg">
                 </figure>
                 <div class="content">
                     <h2>
@@ -194,7 +194,7 @@
         <div class="content">
             <!-- boîte -->
             <div class="box">
-                <img src="images/antibesVignette.jpg" alt="">
+                <img src="images/antibes-marina.jpeg" alt="">
                 <div class="content" id="carteAntibes">
                     <div>
                         <h4>Antibes</h4>
@@ -276,25 +276,25 @@
     <div class="yacht-list">
         <div class="yacht-item">
             <img src=".jpg" alt="Le Colossal" style="width:100%">
-            <h2>Le Colossal</h2>
-            <p>Prix: 5000€/jour</p>
-            <p>Capacité: 10 personnes</p>
+            <h2>PHP</h2>
+            <p>Prix : </p>
+            <p>Cabines :</p>
             <a href="yacht.php?id=4" class="voir-plus">Voir plus</a>
         </div>
 
         <div class="yacht-item">
             <img src="boat2.jpg" alt="Corbac-X" style="width:100%">
-            <h2>Corbac-X</h2>
-            <p>Prix: 6000€/jour</p>
-            <p>Capacité: 12 personnes</p>
+            <h2>PHP</h2>
+            <p>Prix :</p>
+            <p>Cabines :</p>
             <a href="yacht.php?id=5" class="voir-plus">Voir plus</a>
         </div>
 
         <div class="yacht-item">
             <img src="boat3.jpg" alt="Ventex" style="width:100%">
-            <h2>Ventex</h2>
-            <p>Prix: 7000€/jour</p>
-            <p>Capacité: 15 personnes</p>
+            <h2>PHP</h2>
+            <p>Prix :</p>
+            <p>Cabines :</p>
             <a href="yacht.php?id=6" class="voir-plus">Voir plus</a>
         </div>
     </div>

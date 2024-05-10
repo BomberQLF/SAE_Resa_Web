@@ -17,4 +17,5 @@
 - ![ChatGPT-4](images/had%C3%A8s-2000.webp)
 - ![ChatGPT-4](images/corbac-x.webp)
 - ![ChatGPT-4](images/black-water.webp)
-- ![https://fffuel.co/aaabstract/](images/aaabstract.webp)
+
+Dans ma base de donnée j'ai décidé de seulement ajouté des images pour les 3 derniers bateaux qui me serviront à être affichés comme "Derniers produits mis en avant", j'ai préféré faire cela que de refaire tout un code comme dans yacht.php qui parcours toutes mes images dans un dossier.
