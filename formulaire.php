@@ -61,17 +61,25 @@
     <?php
     // Connexion à la base de données
     $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
-    $stmt = $db->prepare("SELECT modele, id_bateaux FROM sae_bateaux ORDER BY modele ASC");
+    $stmt = $db->prepare("SELECT modele, id_bateaux, prixParJour FROM sae_bateaux ORDER BY modele ASC");
     $stmt->execute();
     $yachts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     $idReservation = isset($_GET['id']) ? $_GET['id'] : null;
 
+    // Stock les prix dans un array en JS
+    echo '<script>';
+    echo 'var yachtPrices = {';
+    foreach ($yachts as $yacht) {
+        echo "'" . $yacht['id_bateaux'] . "': " . $yacht['prix'] . ',';
+    }
+    echo '};';
+    echo '</script>';
 
 
     ?>
 
-    <section>
+    <section id="formulaire">
         <h2 id="form-title">Réservation du Yacht</h2>
         <form action="traitement.php" method="post">
             <label for="nom">Nom :</label>
@@ -91,13 +99,18 @@
 
             <select name="modele" id="modele">
                 <?php foreach ($yachts as $yacht) { ?>
-                    <option value="<?php echo $yacht['id_bateaux']?>" <?php echo $yacht['id_bateaux'] == $idReservation ? " selected=selected" : ""; ?>>
-                        <?php echo $yacht['modele']?>
+                    <option value="<?php echo $yacht['id_bateaux'] ?>" <?php echo $yacht['id_bateaux'] == $idReservation ? " selected=selected" : ""; ?>>
+                        <?php echo $yacht['modele'] ?>
                     </option>
                 <?php } ?>
             </select>
 
-            <input type="submit" value="Réserver">
+            <div id="prix-total-input">
+                <div id="prix-total"><span>Prix total :</span> <span id="total-price">0 €</span></div>
+                <input type="submit" id="reserver" name="reserver" value="Réserver">
+            </div>
+
+
         </form>
     </section>
 
