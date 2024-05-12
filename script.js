@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Fonction pour calculer le prix
   function calculatePrice() {
+    console.log(calculatePrice);
     // Obtenir les valeurs sélectionnées dans le formulaire
     const yachtId = yachtSelect.value;
     const dateDebut = new Date(dateDebutInput.value);

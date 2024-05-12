@@ -105,12 +105,24 @@
                 <?php } ?>
             </select>
 
+            <div>
+                <label for="secondModele">Second Modèle :</label>
+                <select name="secondModele" id="secondModele">
+                    <option value="">Sélectionner un Yacht</option>
+                    <?php foreach ($yachts as $yacht) {
+                        if ($yacht['id_bateaux'] != $idReservation) { ?>
+                            <option value="<?php echo $yacht['id_bateaux'] ?>">
+                                <?php echo $yacht['modele'] ?>
+                            </option>
+                        <?php }
+                    } ?>
+                </select>
+            </div>
+
             <div id="prix-total-input">
                 <div id="prix-total"><span>Prix total :</span> <span id="total-price">0 €</span></div>
                 <input type="submit" id="reserver" name="reserver" value="Réserver">
             </div>
-
-
         </form>
     </section>
 
