@@ -55,7 +55,7 @@
                             <a class="menuNav" href="catalogue.php">Catalogue</a>
                         </li>
                         <li>
-                            <a class="menuNav" href="catalogue.php">Bâteaux</a>
+                            <a class="menuNav" href="#">Bâteaux</a>
                             <ul class="sous-menu">
                                 <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
                                 <li><a href="yacht.php?id=2">Hadès 2000</a></li>
@@ -117,22 +117,22 @@
 
                 <section id="s2">
                     <div>
-                        <h3><?php echo $yacht["modele"]; ?></h3>
-                        <h6>Yacht à louer</h6>
-                        <a id="lien-reserver" href="formulaire.php?id=<?php echo $yacht['id_bateaux'];?>">Réserver</a>
+                        <h1><?php echo $yacht["modele"]; ?></h1>
+                        <h2>Yacht à louer</h2>
+                        <a id="lien-reserver" href="formulaire.php?id=<?php echo $yacht['id_bateaux']; ?>">Réserver</a>
                     </div>
                     <div class="descriptif-section">
                         <h3 class="descriptif">Prix Par Jours</h3>
-                        <h6 class="bold"><?php echo $yacht["prixParJour"]; ?>€</h6>
+                        <h4 class="bold"><?php echo $yacht["prixParJour"]; ?>€</h4>
                         <h3 class="descriptif">Vitesse</h3>
-                        <h6 class="bold"><?php echo $yacht["vitesse"]; ?> noeuds</h6>
+                        <h4 class="bold"><?php echo $yacht["vitesse"]; ?> noeuds</h4>
                         <h3 class="descriptif">Longueur</h3>
-                        <h6 class="bold"><?php echo $yacht["longueur"]; ?> mètres</h6>
+                        <h4 class="bold"><?php echo $yacht["longueur"]; ?> mètres</h4>
                         <h3 class="descriptif">Cabines</h3>
-                        <h6 class="bold"><?php echo $yacht["cabines"]; ?></h6>
+                        <h4 class="bold"><?php echo $yacht["cabines"]; ?></h4>
                     </div>
                     <div class="descriptif-section">
-                        <h3 class="descriptif">Description</h3>
+                        <h5 class="descriptif">Description</h>
                         <h6 id="descriptionYacht">
                             <?php echo $yacht["description"]; ?>
                         </h6>
@@ -151,7 +151,7 @@
     <footer>
         <div class="container">
             <div class="footer-section">
-                <h3>Bateaux</h3>
+                <p>Bateaux</p>
                 <ul>
                     <li><a href="yacht.php?id=1" class="lien-footer">Le Bridgerton</a></li>
                     <li><a href="yacht.php?id=2" class="lien-footer">HADÈS 2000</a></li>
@@ -162,7 +162,7 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Destination</h3>
+                <p>Destination</p>
                 <ul>
                     <li><a href="antibes.html" class="lien-footer">Antibes</a></li>
                     <li><a href="lamanche.html" class="lien-footer">La Manche</a></li>
@@ -173,14 +173,14 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Mentions légales</h3>
+                <p>Mentions légales</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Politique de confidentialité</a></li>
                     <li><a href="#" class="lien-footer">Conditions d'utilisation</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>À propos</h3>
+                <p>À propos</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Direction</a></li>
                 </ul>

@@ -24,6 +24,18 @@
   font-family: "Raleway", sans-serif;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 a {
   text-decoration: 0;
 }
@@ -192,6 +204,7 @@ section {
 .items {
   color: white;
   margin: 8px 0;
+  font-size: 1.3rem;
 }
 
 .itemsWidget {
@@ -199,7 +212,7 @@ section {
   padding: 10px;
   flex-basis: 45%;
   color: rgb(0, 0, 0);
-  width: 460px;
+  width: 500px;
   text-align: center;
   border-radius: 10px;
   background-color: #29d9d5;
@@ -207,7 +220,7 @@ section {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.03rem;
+  font-size: 1.15rem;
   display: flex;
   justify-content: center;
 }
@@ -225,7 +238,7 @@ section {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 1.03rem;
+  font-size: 1.1rem;
   display: flex;
   justify-content: center;
 }
@@ -271,13 +284,15 @@ section {
 .card-text {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: #29d9d5;
+  font-size: 1.5rem;
 }
 
 .itemsText {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: white;
+  color: #29d9d5;
+  font-size: 1.8rem;
 }
 
 .destination-preview {
@@ -369,6 +384,7 @@ p {
 .card-elements {
   color: white;
   margin: 8px 0;
+  font-size: 1.4rem;
 }
 
 #blue-title {
@@ -404,7 +420,7 @@ footer {
   text-align: center;
 }
 
-.footer-section h3 {
+.footer-section p {
   margin-bottom: 15px;
   font-size: 1.6rem;
 }

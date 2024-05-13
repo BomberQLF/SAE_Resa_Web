@@ -32,7 +32,7 @@
                     <a class="menuNav" href="catalogue.php">Catalogue</a>
                 </li>
                 <li>
-                    <a class="menuNav" href="catalogue.php">Bâteaux</a>
+                    <a class="menuNav" href="#">Bâteaux</a>
                     <ul class="sous-menu">
                         <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
                         <li><a href="yacht.php?id=2">Hadès 2000</a></li>
@@ -51,12 +51,6 @@
             </ul>
         </nav>
     </header>
-
-    <main>
-        <div class="retour-page-precedente">
-            <a href="catalogue.php">Retour</a>
-        </div>
-    </main>
 
     <?php
     // Connexion à la base de données
@@ -80,23 +74,24 @@
     ?>
 
     <section id="formulaire">
-        <h2 id="form-title">Réservation du Yacht</h2>
+        <h1 id="form-title">Réservation du Yacht</h1>
         <form action="traitement.php" method="post">
-            <label for="nom">Nom :</label>
+            <label for="nom">Nom : <span class="formulaire-required">(Obligatoire)</span></label>
             <input type="text" id="nom" name="nom" required><br><br>
 
-            <label for="prenom">Prénom :</label>
+            <label for="prenom">Prénom : <span class="formulaire-required">(Obligatoire)</span></label>
             <input type="text" id="prenom" name="prenom" required><br><br>
 
-            <label for="email">Adresse email :</label>
+            <label for="email">Adresse email : <span class="formulaire-required">(Obligatoire)</span></label>
             <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required><br><br>
 
-            <label for="date_debut">Date de début :</label>
+            <label for="date_debut">Date de début : <span class="formulaire-required">(Obligatoire)</span></label>
             <input type="date" id="date_debut" name="date_debut" required><br><br>
 
-            <label for="date_fin">Date de fin :</label>
+            <label for="date_fin">Date de fin : <span class="formulaire-required">(Obligatoire)</span></label>
             <input type="date" id="date_fin" name="date_fin" required><br><br>
 
+            <label for="modele">Bateau réservé</label>
             <select name="modele" id="modele">
                 <?php foreach ($yachts as $yacht) { ?>
                     <option value="<?php echo $yacht['id_bateaux'] ?>" <?php echo $yacht['id_bateaux'] == $idReservation ? " selected=selected" : ""; ?>>
@@ -105,22 +100,28 @@
                 <?php } ?>
             </select>
 
-            <div>
-                <label for="secondModele">Second Modèle :</label>
-                <select name="secondModele" id="secondModele">
-                    <option value="">Sélectionner un Yacht</option>
-                    <?php foreach ($yachts as $yacht) {
-                        if ($yacht['id_bateaux'] != $idReservation) { ?>
-                            <option value="<?php echo $yacht['id_bateaux'] ?>">
-                                <?php echo $yacht['modele'] ?>
-                            </option>
-                        <?php }
-                    } ?>
-                </select>
-            </div>
+            <label for="secondModele">Second Modèle à Réserver : <span
+                    class="formulaire-required">(Optionnel)</span></label>
+            <select name="secondModele" id="secondModele">
+                <option value="">Sélectionner un Yacht</option>
+                <?php foreach ($yachts as $yacht) {
+                    if ($yacht['id_bateaux'] != $idReservation) { ?>
+                        <option value="<?php echo $yacht['id_bateaux'] ?>">
+                            <?php echo $yacht['modele'] ?>
+                        </option>
+                    <?php }
+                } ?>
+            </select>
+            <label for="secondDateDebut">Date de début du second bateau : <span
+                    class="formulaire-required">(Obligatoire)</span></label>
+            <input type="date" id="secondDateDebut" name="secondDateDebut" required><br><br>
+
+            <label for="secondDateFin">Date de fin du second bateau : <span
+                    class="formulaire-required">(Obligatoire)</span></label>
+            <input type="date" id="secondDateFin" name="secondDateFin" required><br><br>
 
             <div id="prix-total-input">
-                <div id="prix-total"><span>Prix total :</span> <span id="total-price">0 €</span></div>
+                <div id="prix-total"><span class="blueColor">Prix total :</span> <span id="total-price">0 €</span></div>
                 <input type="submit" id="reserver" name="reserver" value="Réserver">
             </div>
         </form>
@@ -130,7 +131,7 @@
     <footer>
         <div class="container">
             <div class="footer-section">
-                <h3>Bateaux</h3>
+                <p>Bateaux</p>
                 <ul>
                     <li><a href="yacht.php?id=1" class="lien-footer">Le Bridgerton</a></li>
                     <li><a href="yacht.php?id=2" class="lien-footer">HADÈS 2000</a></li>
@@ -141,7 +142,7 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Destination</h3>
+                <p>Destination</p>
                 <ul>
                     <li><a href="antibes.html" class="lien-footer">Antibes</a></li>
                     <li><a href="lamanche.html" class="lien-footer">La Manche</a></li>
@@ -152,14 +153,14 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Mentions légales</h3>
+                <p>Mentions légales</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Politique de confidentialité</a></li>
                     <li><a href="#" class="lien-footer">Conditions d'utilisation</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>À propos</h3>
+                <p>À propos</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Direction</a></li>
                 </ul>

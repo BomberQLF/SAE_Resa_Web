@@ -35,7 +35,7 @@
                     <a class="menuNav" href="catalogue.php">Catalogue</a>
                 </li>
                 <li>
-                    <a class="menuNav" href="catalogue.php">Bâteaux</a>
+                <a class="menuNav" href="#">Bâteaux</a>
                     <ul class="sous-menu">
                         <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
                         <li><a href="yacht.php?id=2">Hadès 2000</a></li>
@@ -58,18 +58,18 @@
     <!-- acceuil section -->
     <section id="home">
         <h1>Prestige Yacht</h1>
-        <h4>Naviguez avec Luxe</h4>
+        <h2>Naviguez avec Luxe</h2>
     </section>
 
     <!-- A propos section -->
     <section id="a-propos">
-        <h2 class="title">à propos</h2>
+        <h3 class="title">à propos</h3>
         <div class="img-desc">
             <div class="left">
-                <img class="imgAbout" src="images/accueil-yacht.jpg" alt="image-bateau-bienvenue">
+                <img class="imgAbout" src="images/accueil-yacht.jpg">
             </div>
             <div class="right">
-                <h3>Plongez dans notre fascinante histoire et découvrez nous rapidement.</h3>
+                <h4>Plongez dans notre fascinante histoire et découvrez nous rapidement.</h4>
                 <p>Cliquez ci-dessus pour apprendre à nous connaitre et en apprendre davantage sur notre parcours
                     captivant.</p>
                 <a id="lireHover" href="#">Lire Plus</a>
@@ -87,12 +87,12 @@
         <div class="list">
             <div class="item ">
                 <figure>
-                    <img src="images/1/black-water.jpg">
+                    <img src="images/1/black-water.jpg" alt="Photo du bateau nommé le Bridgerton">
                 </figure>
                 <div class="content">
-                    <h2>
+                    <h4>
                         LE BRIDGERTON
-                    </h2>
+                    </h4>
                     <div class="more">
                         <a href="yacht.php?id=1">Réserver</a>
                         <a href="yacht.php?id=1">Voir Plus</a>
@@ -101,12 +101,12 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/2/1hadès-2000.jpg">
+                    <img src="images/2/1hadès-2000.jpg" alt="Photo du bateau nommé Hadès 2000">
                 </figure>
                 <div class="content">
-                    <h2>
+                    <h4>
                         HADÈS 2000
-                    </h2>
+                    </h4>
                     <div class="more">
                         <a href="yacht.php?id=2">Réserver</a>
                         <a href="yacht.php?id=2">Voir Plus</a>
@@ -115,12 +115,12 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/3/octavius.jpg">
+                    <img src="images/3/octavius.jpg" alt="Photo du bateau nommé Octavius">
                 </figure>
                 <div class="content">
-                    <h2>
+                    <h4>
                         OCTAVIUS
-                    </h2>
+                    </h4>
                     <div class="more">
                         <a href="yacht.php?id=3">Réserver</a>
                         <a href="yacht.php?id=3">Voir Plus</a>
@@ -129,12 +129,12 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/4/leColossal.jpg">
+                    <img src="images/4/leColossal.jpg" alt="Photo du bateau nommé le Colossal">
                 </figure>
                 <div class="content">
-                    <h2>
+                    <h4>
                         LE COLOSSAL
-                    </h2>
+                    </h4>
                     <div class="more">
                         <a href="yacht.php?id=4">Réserver</a>
                         <a href="yacht.php?id=4">Voir Plus</a>
@@ -143,12 +143,12 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/5/corbac-x.jpg">
+                    <img src="images/5/corbac-x.jpg" alt="Photo du bateau nommé Corbac X">
                 </figure>
                 <div class="content">
-                    <h2>
+                    <h4>
                         CORBAC-X
-                    </h2>
+                    </h4>
                     <div class="more">
                         <a href="yacht.php?id=5">Réserver</a>
                         <a href="yacht.php?id=5">Voir Plus</a>
@@ -157,12 +157,12 @@
             </div>
             <div class="item">
                 <figure>
-                    <img src="images/6/ventex.jpg">
+                    <img src="images/6/ventex.jpg" alt="Photo du bateau nommé Ventex">
                 </figure>
                 <div class="content">
-                    <h2>
+                    <h4>
                         VENTEX
-                    </h2>
+                    </h4>
                     <div class="more">
                         <a href="yacht.php?id=6">Réserver</a>
                         <a href="yacht.php?id=6">Voir Plus</a>
@@ -171,11 +171,11 @@
             </div>
         </div>
         <div class="arrows">
-            <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
-            <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+            <button id="prev" aria-label="Défile vers le bateau précédent"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
+            <button id="next" aria-label="Défile vers le bateau suivant"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
         </div>
         <div class="indicators">
-            <div class="number">02</div>
+            <div class="number" style="display:none;" >02</div>
             <ul>
                 <li class="active"></li>
                 <li></li>
@@ -190,7 +190,7 @@
     <!-- FIN CAROUSEL -->
 
     <section id="popular-destination">
-        <h2 class="title">Destinations populaires</h2>
+        <h4 class="title">Destinations populaires</h4>
         <div class="content">
             <!-- boîte -->
             <div class="box">
@@ -274,7 +274,7 @@
     </section>
 
     <section class="derniers-bateaux">
-        <h2>Nos derniers modèles</h2>
+        <h5>Nos derniers modèles</h5>
         <div class="yacht-list">
             <?php
             $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
@@ -286,7 +286,7 @@
                 <div class="yacht-item">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($yacht["image"]); ?>"
                         alt="Nos bateaux les plus récents" style="width:100%">
-                    <h2 class="yacht-title"><?php echo $yacht["modele"]; ?></h2>
+                    <h6 class="yacht-title"><?php echo $yacht["modele"]; ?></h6>
                     <div class="yacht-details">
                         <p class="yacht-price">Prix Par Jours : <?php echo $yacht["prixParJour"]; ?>€</p>
                         <p class="yacht-cabines">Cabines : <?php echo $yacht["cabines"]; ?></p>
@@ -301,7 +301,7 @@
     <footer>
         <div class="container">
             <div class="footer-section">
-                <h3>Bateaux</h3>
+                <p>Bateaux</p>
                 <ul>
                     <li><a href="yacht.php?id=1" class="lien-footer">Le Bridgerton</a></li>
                     <li><a href="yacht.php?id=2" class="lien-footer">HADÈS 2000</a></li>
@@ -312,7 +312,7 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Destination</h3>
+                <p>Destination</p>
                 <ul>
                     <li><a href="antibes.html" class="lien-footer">Antibes</a></li>
                     <li><a href="lamanche.html" class="lien-footer">La Manche</a></li>
@@ -323,14 +323,14 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Mentions légales</h3>
+                <p>Mentions légales</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Politique de confidentialité</a></li>
                     <li><a href="#" class="lien-footer">Conditions d'utilisation</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>À propos</h3>
+                <p>À propos</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Direction</a></li>
                 </ul>

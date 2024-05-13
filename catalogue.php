@@ -32,7 +32,7 @@
                     <a class="menuNav" href="catalogue.php">Catalogue</a>
                 </li>
                 <li>
-                    <a class="menuNav" href="catalogue.php">Bâteaux</a>
+                    <a class="menuNav" href="#">Bâteaux</a>
                     <ul class="sous-menu">
                         <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
                         <li><a href="yacht.php?id=2">Hadès 2000</a></li>
@@ -56,7 +56,8 @@
         <section id="catalogue">
             <h1>Catalogue de bateaux</h1>
             <form action="catalogue.php" method="get">
-                <input type="text" name="search" placeholder="Rechercher un modèle...">
+                <label for="search" class="sr-only">Barre de recherche</label>
+                <input type="text" name="search" id="search" placeholder="Rechercher un modèle...">
                 <button type="submit">Rechercher</button>
             </form>
 
@@ -95,7 +96,7 @@
                             $firstImage = reset($images);
 
                             echo '<div class="bateau">';
-                            echo '<img src="' . $firstImage . '" alt="' . $yacht['modele'] . '">';
+                            echo '<img src="' . $firstImage . '" alt="' . 'Voici notre bateau nommé ' .  $yacht['modele'] . '">';
                             echo '<div class="details">';
                             echo '<h2>' . $yacht['modele'] . '</h2>';
                             echo '<p>Vitesse : ' . $yacht['vitesse'] . ' noeuds</p>';
@@ -118,7 +119,7 @@
     <footer>
         <div class="container">
             <div class="footer-section">
-                <h3>Bateaux</h3>
+                <p>Bateaux</p>
                 <ul>
                     <li><a href="yacht.php?id=1" class="lien-footer">Le Bridgerton</a></li>
                     <li><a href="yacht.php?id=2" class="lien-footer">HADÈS 2000</a></li>
@@ -129,7 +130,7 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Destination</h3>
+                <p>Destination</p>
                 <ul>
                     <li><a href="antibes.html" class="lien-footer">Antibes</a></li>
                     <li><a href="lamanche.html" class="lien-footer">La Manche</a></li>
@@ -140,14 +141,14 @@
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>Mentions légales</h3>
+                <p>Mentions légales</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Politique de confidentialité</a></li>
                     <li><a href="#" class="lien-footer">Conditions d'utilisation</a></li>
                 </ul>
             </div>
             <div class="footer-section">
-                <h3>À propos</h3>
+                <p>À propos</p>
                 <ul>
                     <li><a href="#" class="lien-footer">Direction</a></li>
                 </ul>
