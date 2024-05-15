@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="slider.js"></script>
     <script src="script.js"></script>
@@ -13,7 +20,6 @@
 </head>
 
 <body>
-
     <header>
         <nav>
             <div class="logo">
@@ -35,7 +41,7 @@
                     <a class="menuNav" href="catalogue.php">Catalogue</a>
                 </li>
                 <li>
-                <a class="menuNav" href="#">Bâteaux</a>
+                    <a class="menuNav" href="#">Bâteaux</a>
                     <ul class="sous-menu">
                         <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
                         <li><a href="yacht.php?id=2">Hadès 2000</a></li>
@@ -47,9 +53,6 @@
                 </li>
                 <li>
                     <a class="menuNav" href="#a-propos">À propos</a>
-                </li>
-                <li>
-                    <a href="#" class="menuNav"><img id="navImage" src="images/user-solid.webp" alt=""></a>
                 </li>
             </ul>
         </nav>
@@ -77,10 +80,6 @@
         </div>
     </section>
 
-    <!-- CAROUSEL -->
-    <!-- CAROUSEL -->
-    <!-- CAROUSEL -->
-    <!-- CAROUSEL -->
     <!-- CAROUSEL -->
 
     <section class="carousel">
@@ -171,11 +170,13 @@
             </div>
         </div>
         <div class="arrows">
-            <button id="prev" aria-label="Défile vers le bateau précédent"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>
-            <button id="next" aria-label="Défile vers le bateau suivant"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+            <button id="prev" aria-label="Défile vers le bateau précédent"><i class="fa-solid fa-chevron-left"
+                    aria-hidden="true"></i></button>
+            <button id="next" aria-label="Défile vers le bateau suivant"><i class="fa-solid fa-chevron-right"
+                    aria-hidden="true"></i></button>
         </div>
         <div class="indicators">
-            <div class="number" style="display:none;" >02</div>
+            <div class="number" style="display:none;">02</div>
             <ul>
                 <li class="active"></li>
                 <li></li>
@@ -205,7 +206,6 @@
                 </div>
             </div>
             <!-- boîte -->
-            <!-- boîte -->
             <div class="box">
                 <img src="images/laMancheVignette.jpg" alt="">
                 <div class="content" id="carteLaManche">
@@ -217,7 +217,6 @@
                     </div>
                 </div>
             </div>
-            <!-- boîte -->
             <!-- boîte -->
             <div class="box">
                 <img src="images/monacoVignette.jpg" alt="">
@@ -231,7 +230,6 @@
                 </div>
             </div>
             <!-- boîte -->
-            <!-- boîte -->
             <div class="box">
                 <img src="images/corseVignette.jpg" alt="">
                 <div class="content" id="carteCorse">
@@ -244,7 +242,6 @@
                 </div>
             </div>
             <!-- boîte -->
-            <!-- boîte -->
             <div class="box">
                 <img src="images/ibizaVignette.jpg" alt="">
                 <div class="content" id="carteIbiza">
@@ -256,7 +253,6 @@
                     </div>
                 </div>
             </div>
-            <!-- boîte -->
             <!-- boîte -->
             <div class="box">
                 <img src="images/maldivesVignette.jpg" alt="">
@@ -337,9 +333,6 @@
             </div>
         </div>
     </footer>
-
-
-
 </body>
 
 </html>

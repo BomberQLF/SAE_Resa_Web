@@ -1,11 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap");
-/* FONT POUR LE CHIFFRE (LIEN CI DESSOUS) */
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital@0;1&display=swap");
-/* FONT POUR LE NOM DE LA DESTINATION EN QUESTION */
-@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Source+Code+Pro:ital@0;1&display=swap");
-/* FONT POUR LES SPAN ITEMS */
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
 :root {
   --main-color: #29d9d5;
   --text-color: #fff;
@@ -49,11 +41,6 @@ html {
 body {
   background-color: #000000;
 }
-
-#navImage {
-    width: 30px;
-    height: 30px;
-  }
 
 section {
   margin-top: 50px;

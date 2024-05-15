@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="stylesheet" href="yacht.css">
     <link rel="stylesheet" href="style.css">
@@ -45,9 +53,6 @@
                 <li>
                     <a class="menuNav" href="#a-propos">À propos</a>
                 </li>
-                <li>
-                    <a href="#" class="menuNav"><img id="navImage" src="images/user-solid.webp" alt=""></a>
-                </li>
             </ul>
         </nav>
     </header>
@@ -69,10 +74,8 @@
     }
     echo '};';
     echo '</script>';
-
-
     ?>
-
+    
     <section id="formulaire">
         <h1 id="form-title">Réservation du Yacht</h1>
         <form action="traitement.php" method="post">
@@ -100,9 +103,9 @@
                 <?php } ?>
             </select>
 
-            <label for="secondModele">Second Modèle à Réserver : <span
+            <label for="second_modele">Second Modèle à Réserver : <span
                     class="formulaire-required">(Optionnel)</span></label>
-            <select name="secondModele" id="secondModele">
+            <select name="second_modele" id="second_modele">
                 <option value="">Sélectionner un Yacht</option>
                 <?php foreach ($yachts as $yacht) {
                     if ($yacht['id_bateaux'] != $idReservation) { ?>
@@ -112,13 +115,13 @@
                     <?php }
                 } ?>
             </select>
-            <label for="secondDateDebut">Date de début du second bateau : <span
+            <label for="second_date_debut">Date de début du second bateau : <span
                     class="formulaire-required">(Obligatoire)</span></label>
-            <input type="date" id="secondDateDebut" name="secondDateDebut" required><br><br>
+            <input type="date" id="second_date_debut" name="second_date_debut"><br><br>
 
-            <label for="secondDateFin">Date de fin du second bateau : <span
+            <label for="second_date_fin">Date de fin du second bateau : <span
                     class="formulaire-required">(Obligatoire)</span></label>
-            <input type="date" id="secondDateFin" name="secondDateFin" required><br><br>
+            <input type="date" id="second_date_fin" name="second_date_fin"><br><br>
 
             <div id="prix-total-input">
                 <div id="prix-total"><span class="blueColor">Prix total :</span> <span id="total-price">0 €</span></div>

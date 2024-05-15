@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;500&display=swap");
-
 :root {
   --color: #29d9d5;
   --background-color: #111;
@@ -27,10 +25,6 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-#navImage {
-  width: 24px;
 }
 
 a {

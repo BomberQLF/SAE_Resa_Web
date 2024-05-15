@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <link rel="stylesheet" href="yacht.css">
     <link rel="stylesheet" href="style.css">
@@ -44,9 +52,6 @@
                 </li>
                 <li>
                     <a class="menuNav" href="#a-propos">À propos</a>
-                </li>
-                <li>
-                    <a href="#" class="menuNav"><img id="navImage" src="images/user-solid.webp" alt=""></a>
                 </li>
             </ul>
         </nav>
@@ -96,7 +101,7 @@
                             $firstImage = reset($images);
 
                             echo '<div class="bateau">';
-                            echo '<img src="' . $firstImage . '" alt="' . 'Voici notre bateau nommé ' .  $yacht['modele'] . '">';
+                            echo '<img src="' . $firstImage . '" alt="' . 'Voici notre bateau nommé ' . $yacht['modele'] . '">';
                             echo '<div class="details">';
                             echo '<h2>' . $yacht['modele'] . '</h2>';
                             echo '<p>Vitesse : ' . $yacht['vitesse'] . ' noeuds</p>';
