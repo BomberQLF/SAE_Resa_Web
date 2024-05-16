@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about.css">
     <script src="script.js"></script>
@@ -11,6 +13,9 @@
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <header>
         <nav>
             <div class="logo">
@@ -52,43 +57,52 @@
     <main>
         <section class="presentation-directeur">
             <div class="presentation">
-                <h1>Qui suis-je ?</h1>
-                <p>Je me nomme <span>Tom MURPHY</span> et je suis un étudiant en développement Web, mais aussi
-                    <span>PDG</span> de cet organisation nommé <span>Prestige Yacht</span>. Ce projet, sur lequel vous vous
-                    trouvez actuellement, est ma plus grande création.</p>
+                <h1 data-aos="fade-down" data-aos-duration="1200" >Qui suis-je ?</h1>
+                <p data-aos="fade-right" data-aos-duration="1200" >Je me nomme <span>Tom MURPHY</span> et je suis un étudiant en développement Web, mais aussi
+                    <span>PDG</span> de cet organisation nommé <span>Prestige Yacht</span>. Ce projet, sur lequel vous
+                    vous
+                    trouvez actuellement, est ma plus grande création.
+                </p>
             </div>
             <div class="presentation-image">
-                <img src="images/photoDirecteur.jpeg" alt="Image de Tom Murphy">
+                <img data-aos="flip-left"  data-aos-duration="1800" src="images/photoDirecteur.jpeg" alt="Image de Tom Murphy">
             </div>
         </section>
     </main>
 
     <section class="presentation-site">
         <div class="grid-container">
-            <div class="grid-item item1">
-                <h2>Partie 1</h2>
-                <p>Mon texte</p>
+            <div class="grid-item item1" data-aos="zoom-in-down" data-aos-duration="800">
+                <h2>Présentation</h2>
+                <p>Nous sommes une entreprise réputée et fiable, spécialisée dans la réservation de bateaux de luxe.
+                    Notre flotte comprend six modèles prestigieux : Le Bridgerton, Hadès 2000, Octavius, Corbac-X, Le
+                    Colossal et Ventex.</p>
             </div>
-            <div class="grid-item item2">
+            <div class="grid-item item2" data-aos="zoom-in-down" data-aos-duration="800">
                 <h2>Partie 2</h2>
-                <p>Mon texte</p>
+                <p>Intérieurs luxueux, cabines spacieuses et équipements modernes.</p>
             </div>
-            <div class="grid-item item3">
-                <h2>Partie 3</h2>
-                <p>Mon texte</p>
+            <div class="grid-item item3" data-aos="zoom-in" data-aos-duration="800">
+                <h2>Services à Bord</h2>
+                <p>Profitez de services haut de gamme incluant des chefs privés, des spas, et des activités nautiques.
+                </p>
             </div>
-            <div class="grid-item item4">
-                <h2>Partie 4</h2>
-                <p>Mon texte</p>
+            <div class="grid-item item4" data-aos="zoom-in" data-aos-duration="800">
+                <h2>Mission</h2>
+                <p>Notre mission est de fournir à nos clients une expérience de navigation inoubliable, avec un service
+                    client exceptionnel et une attention aux détails incomparable. Nos yachts sont équipés des
+                    meilleures commodités pour assurer votre confort et votre sécurité.</p>
             </div>
-            <div class="grid-item item5">
-                <h2>Partie 5</h2>
-                <p>Mon texte ici</p>
+            <div class="grid-item item5" data-aos="zoom-in-up" data-aos-duration="800">
+                <h2>Destination Populaires</h2>
+                <p>Nous avons mis à disposition une liste de destinations populaires où nos clients aiment naviguer. Ces
+                    destinations sont soigneusement sélectionnées pour leur beauté naturelle, leurs attractions
+                    culturelles et leurs expériences uniques.</p>
             </div>
-            <div class="grid-item item6">
+            <div class="grid-item item6" data-aos="zoom-in-right" data-aos-duration="800">
                 <h2 class="side-text">Prestige</h2>
             </div>
-            <div class="grid-item item7">
+            <div class="grid-item item7" data-aos="zoom-in-left" data-aos-duration="800">
                 <h2 class="side-text">Yacht</h2>
             </div>
         </div>

@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="yacht.css">
     <link rel="stylesheet" href="style.css">
@@ -19,9 +21,11 @@
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
 
     <?php
-
     ini_set('display_errors', 1);
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
@@ -98,16 +102,16 @@
                                 // Organiser les images dans les divs xl et sm
                                 if ($imageCount == 1) {
                                     echo '<div class="xl">';
-                                    echo '<img src="' . $dossier . '/' . $file . '" alt="">';
+                                    echo '<img data-aos="zoom-in-down" data-aos-duration="1200" src="' . $dossier . '/' . $file . '" alt="">';
                                     echo '</div>';
                                 } else {
                                     echo '<div class="sm">';
-                                    echo '<img src="' . $dossier . '/' . $file . '" alt="">';
+                                    echo '<img data-aos="zoom-in" data-aos-duration="1200" src="' . $dossier . '/' . $file . '" alt="">';
                                     // Afficher deux images dans sm s'il reste des images à récupérer
                                     $imageCount++;
                                     if ($imageCount <= 7) {
                                         $file = readdir($dir);
-                                        echo '<img src="' . $dossier . '/' . $file . '" alt="">';
+                                        echo '<img data-aos="zoom-in" data-aos-duration="1200" src="' . $dossier . '/' . $file . '" alt="">';
                                     }
                                     echo '</div>';
                                 }
@@ -122,23 +126,23 @@
 
                 <section id="s2">
                     <div>
-                        <h1><?php echo $yacht["modele"]; ?></h1>
-                        <h2>Yacht à louer</h2>
+                        <h1 data-aos="zoom-in" data-aos-duration="1200"><?php echo $yacht["modele"]; ?></h1>
+                        <h2 data-aos="zoom-in" data-aos-duration="1200">Yacht à louer</h2>
                         <a id="lien-reserver" href="formulaire.php?id=<?php echo $yacht['id_bateaux']; ?>">Réserver</a>
                     </div>
                     <div class="descriptif-section">
-                        <h3 class="descriptif">Prix Par Jours</h3>
-                        <h4 class="bold"><?php echo $yacht["prixParJour"]; ?>€</h4>
-                        <h3 class="descriptif">Vitesse</h3>
-                        <h4 class="bold"><?php echo $yacht["vitesse"]; ?> noeuds</h4>
-                        <h3 class="descriptif">Longueur</h3>
-                        <h4 class="bold"><?php echo $yacht["longueur"]; ?> mètres</h4>
-                        <h3 class="descriptif">Cabines</h3>
-                        <h4 class="bold"><?php echo $yacht["cabines"]; ?></h4>
+                        <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Prix Par Jours</h3>
+                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["prixParJour"]; ?>€</h4>
+                        <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Vitesse</h3>
+                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["vitesse"]; ?> noeuds</h4>
+                        <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Longueur</h3>
+                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["longueur"]; ?> mètres</h4>
+                        <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Cabines</h3>
+                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["cabines"]; ?></h4>
                     </div>
                     <div class="descriptif-section">
-                        <h5 class="descriptif">Description</h>
-                            <h6 id="descriptionYacht">
+                        <h5 data-aos="fade-down" data-aos-duration="1200" class="descriptif">Description</h>
+                            <h6 data-aos="fade-down" data-aos-duration="1200" id="descriptionYacht">
                                 <?php echo $yacht["description"]; ?>
                             </h6>
                     </div>
