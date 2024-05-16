@@ -51,7 +51,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="menuNav" href="#a-propos">À propos</a>
+                    <a class="menuNav" href="about.html">À propos</a>
                 </li>
             </ul>
         </nav>
@@ -126,6 +126,7 @@
             <div id="prix-total-input">
                 <div id="prix-total"><span class="blueColor">Prix total :</span> <span id="total-price">0 €</span></div>
                 <input type="submit" id="reserver" name="reserver" value="Réserver">
+                <input type="hidden" id="prix_total_hidden" name="prix_total">
             </div>
         </form>
     </section>
@@ -165,7 +166,7 @@
             <div class="footer-section">
                 <p>À propos</p>
                 <ul>
-                    <li><a href="#" class="lien-footer">Direction</a></li>
+                    <li><a href="about.html" class="lien-footer">Direction</a></li>
                 </ul>
             </div>
         </div>

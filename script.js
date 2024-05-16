@@ -1,4 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
+  var menuNav = document.querySelectorAll(".menuNav");
+
+  menuNav.forEach(function (navBarName) {
+    navBarName.addEventListener("mouseover", function () {
+      this.style.transition = "color 0.5s ease";
+      this.style.color = "#29d9d5";
+    });
+
+    navBarName.addEventListener("mouseout", function () {
+      this.style.transition = "color 0.5s ease";
+      this.style.color = "";
+    });
+  });
+
+  // CALCUL DU PRIX TOTAL DE LA RESERVATION DE MON FORMULAIRE
   var yachtPrices = {
     1: 56000,
     2: 86000,
@@ -45,13 +60,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var dateFin = new Date(dateFinInput.value);
 
     var diffTime = Math.abs(dateFin - dateDebut);
-    var diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    const diffDays = Math.ceil(diffTime / 86400000); // Ca revient à faire le calcul suivant : 1000 * 60 * 60 * 24
 
     var yachtPrice = yachtPrices[yachtId];
 
     var price = diffDays * yachtPrice;
 
     prixTotalDiv.textContent = `Prix total : ${price} €`;
+    
+    var prixTotalInput = document.getElementById("prix_total_hidden");
+    // C'est un modèle ternaire utilisé aussi en PHP pour dire que si la valeur séléctionné dans le champ du second modele est vide alors total price, else price.
+    prixTotalInput.value = secondModeleSelect.value !== "" ? totalPrice : price;
 
     if (secondModeleSelect.value !== "") {
       var secondYachtId = secondModeleSelect.value;

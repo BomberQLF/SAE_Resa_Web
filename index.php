@@ -52,7 +52,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="menuNav" href="#a-propos">À propos</a>
+                    <a class="menuNav" href="about.html">À propos</a>
                 </li>
             </ul>
         </nav>
@@ -328,7 +328,7 @@
             <div class="footer-section">
                 <p>À propos</p>
                 <ul>
-                    <li><a href="#" class="lien-footer">Direction</a></li>
+                    <li><a href="about.html" class="lien-footer">Direction</a></li>
                 </ul>
             </div>
         </div>

@@ -224,8 +224,10 @@ button {
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: bold;
-  display: block; /* Permet de centrer le bouton */
   transition: 0.5s;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Style pour centrer le texte du bouton */
@@ -408,124 +410,91 @@ h6 {
 
 /* CSS POUR LE FORMULAIRE */
 
-main .retour-page-precedente a {
+/* CSS POUR LE FORMULAIRE */
+
+#formulaire {
+  background-color: #111;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+#form-title {
   color: #29d9d5;
-  font-size: 1.3rem;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 form {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 40%;
-  margin: 50px auto 120px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px 1px #29d9d5;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 label {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
   display: block;
-  width: 100%;
-  margin-bottom: 10px;
-  color: #29d9d5;
-  font-size: 1.4rem;
 }
 
 input[type="text"],
-input[type="date"] {
+input[type="date"],
+input[type="email"],
+select {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #fff;
   border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  background-color: #555;
+  color: #fff;
 }
 
 input[type="submit"] {
-  padding: 10px 20px;
+  width: 100%;
+  padding: 15px;
   background-color: #29d9d5;
   color: black;
-  text-decoration: none;
-  border-radius: 18px;
-  font-size: 1.6rem;
-  font-weight: bold;
   border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
   cursor: pointer;
-  transition: background-color 0.5s;
+  transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
   background-color: #1aa9a5;
 }
 
-input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-section #form-title {
+.formulaire-required {
   color: #29d9d5;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 120px;
 }
 
-#prix {
-  display: block;
-  width: 100%;
-  padding: 6px;
-  margin-right: 10px;
+#prix-total-input {
+  margin-top: 10px;
+  text-align: center;
+}
+
+#prix-total {
+  color: #29d9d5;
   font-size: 1.4rem;
-  border: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
-#modele,
-#second_modele {
-  width: 100%;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+#total-price {
+  color: #fff;
+}
+
+/* IA UTILISÉ POUR AJOUTER UN ICONE DE MENU DÉROULANT */
+select {
   appearance: none;
-  /* IA utilisé pour créer une icone plus esthétique de flèche */
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M7.41 7.84L12 12.42l4.58-4.58c.78-.78 2.05-.78 2.83 0.78.78.78 2.05 0 2.83l-6.58 6.59c-.78.78-2.05.78-2.83 0L4.58 10.67c-.78-.78-.78-2.05 0-2.83.78-.78 2.05-.78 2.83 0z"/></svg>');
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 16px 16px;
-  margin-bottom: 15px;
-}
-
-#modele option {
-  padding: 5px;
-}
-
-#prix-total-input {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 22px;
-}
-
-#prix-total {
-  color: white;
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-}
-
-#prix-total span:first-child {
-  color: #29d9d5;
-  margin-right: 5px;
-}
-
-#reservation-form {
-  position: relative;
-}
-
-.formulaire-required {
-  color: white;
+  background-color: #555;
+  color: #fff;
 }

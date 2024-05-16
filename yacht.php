@@ -74,7 +74,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a class="menuNav" href="#a-propos">À propos</a>
+                            <a class="menuNav" href="about.html">À propos</a>
                         </li>
                     </ul>
                 </nav>
@@ -98,16 +98,16 @@
                                 // Organiser les images dans les divs xl et sm
                                 if ($imageCount == 1) {
                                     echo '<div class="xl">';
-                                    echo '<img src="' . $dossier . '/' . $file . '" alt="' . $file . '">';
+                                    echo '<img src="' . $dossier . '/' . $file . '" alt="">';
                                     echo '</div>';
                                 } else {
                                     echo '<div class="sm">';
-                                    echo '<img src="' . $dossier . '/' . $file . '" alt="' . $file . '">';
+                                    echo '<img src="' . $dossier . '/' . $file . '" alt="">';
                                     // Afficher deux images dans sm s'il reste des images à récupérer
                                     $imageCount++;
                                     if ($imageCount <= 7) {
                                         $file = readdir($dir);
-                                        echo '<img src="' . $dossier . '/' . $file . '" alt="' . $file . '">';
+                                        echo '<img src="' . $dossier . '/' . $file . '" alt="">';
                                     }
                                     echo '</div>';
                                 }
@@ -187,7 +187,7 @@
             <div class="footer-section">
                 <p>À propos</p>
                 <ul>
-                    <li><a href="#" class="lien-footer">Direction</a></li>
+                    <li><a href="about.html" class="lien-footer">Direction</a></li>
                 </ul>
             </div>
         </div>
