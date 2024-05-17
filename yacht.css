@@ -68,40 +68,23 @@ nav .logo a span {
 
 .sous-menu {
   display: none;
+  margin-bottom: 30px;
   position: absolute;
   background-color: #111;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  padding: 1;
-  margin: 8px;
   border-radius: 5px;
-  width: max-content;
+  width: 120%;
   left: 50%;
   transform: translateX(-50%);
-  width: 200px;
-  /* Example fixed width */
-}
-
-.sous-menu li a {
-  display: block;
-  /* Makes <a> tags fill the entire list item */
-  width: 100%;
-  /* Ensures it takes the full width */
-  padding: 10px 20px;
-  /* Adjust as needed */
-  color: #fff;
-  /* Text color */
-  text-align: center;
-  /* Center the text */
 }
 
 .sous-menu li {
-  /* display: block; */
-  padding: 10px 20px;
   margin: 0;
   color: #fff;
-  font-size: 14px;
+  font-size: 0.8rem;
   text-align: center;
+  list-style-type: none;
 }
 
 .sous-menu li:hover a {
@@ -117,7 +100,8 @@ nav .logo a span {
 }
 
 nav ul li a {
-  padding: 12px;
+  padding: 16px;
+  display: block;
 }
 
 .navbar li:hover .sous-menu {
@@ -129,24 +113,20 @@ nav ul li a {
   display: flex;
   align-items: center;
 }
-
-.menu li {
+.menu>li {
   position: relative;
-  margin: 0 15px;
   list-style-type: none;
+  padding: 0 15px;
 }
 
 .menu li a {
   color: #fff;
   font-size: 1.7rem;
+  text-decoration: none;
 }
 
-.menu li:hover .sous-menu {
-  display: block;
-}
-
-.menu.navbar li:hover .sous-menu {
-  display: block;
+.menuNav:hover + .sous-menu, .sous-menu:hover {
+  display: block; /* or display: flex; */
 }
 
 /* CSS POUR LES DISPLAY DES BATEAUX A LOUER */
@@ -229,6 +209,7 @@ button {
   display: block;
   margin-right: auto;
   margin-left: auto;
+  height: 44px;
 }
 
 /* Style pour centrer le texte du bouton */
@@ -349,8 +330,15 @@ h6 {
   width: 100%;
 }
 
+.blue {
+  color: #29d9d5 !important;
+}
+
 .btn-reserver,
 .btn-voir-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48%;
   padding: 10px;
   background-color: #222;
@@ -359,9 +347,9 @@ h6 {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1.6rem;
-  text-align: center;
   /* margin-top: 10px; */
   transition: 0.5s;
+  height: 44px;
 }
 
 .btn-reserver:hover,
@@ -370,18 +358,20 @@ h6 {
 }
 
 #lien-reserver {
-  display: inline-block;
+  display: flex;
   padding: 10px 20px;
   background-color: #29d9d5;
   color: black;
+  justify-content: center;
   text-decoration: none;
+  align-items: center;
   border-radius: 18px;
   font-size: 1.6rem;
   font-weight: bold;
   margin-top: 25px;
   width: 350px;
-  text-align: center;
   transition: background-color 0.5s;
+  height: 44px;
 }
 
 #lien-reserver:hover {

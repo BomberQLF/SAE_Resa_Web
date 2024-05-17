@@ -67,7 +67,7 @@
                             <a class="menuNav" href="catalogue.php">Catalogue</a>
                         </li>
                         <li>
-                            <a class="menuNav" href="#">Bâteaux</a>
+                            <a class="menuNav blue" href="#">Bâteaux</a>
                             <ul class="sous-menu">
                                 <li><a href="yacht.php?id=1">Le Bridgerton</a></li>
                                 <li><a href="yacht.php?id=2">Hadès 2000</a></li>
@@ -92,9 +92,9 @@
                     if (is_dir($dossier)) {
                         // Parcourir le dossier et afficher les images
                         $dir = opendir($dossier);
-                        $imageCount = 0; // Compteur pour les images récupérées
+                        $imageCount = 0; // Compteur pour les images que je récupuère
                         while (($file = readdir($dir)) !== false && $imageCount < 7) {
-                            // Vérifier si le fichier est une image
+                            // Vérification si le fichier est une image
                             $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
                             if (in_array($ext, array("jpg", "jpeg", "png", "gif", "webp"))) {
                                 // Incrémenter le compteur d'images

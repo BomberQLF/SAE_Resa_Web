@@ -19,61 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       });
 
-      //   REDIRECTION VERS UNE AUTRE PAGE HTML AU CLICK DU CONTAINER
-      var carte1 = document.querySelector(".card");
-      if (carte1) {
-        carte1.addEventListener("click", function () {
-          window.location.href = "antibes.html";
-        });
-      }
-
-      var carte2 = document.querySelector(".card");
-      if (carte2) {
-        carte2.addEventListener("click", function () {
-          window.location = "lamanche.html";
-        });
-      }
-
-      var carte3 = document.querySelector(".card");
-      if (carte3) {
-        carte3.addEventListener("click", function () {
-          window.location = "monaco.html";
-        });
-      }
-
-      var carte4 = document.querySelector(".card");
-      if (carte4) {
-        carte4.addEventListener("click", function () {
-          window.location = "corse.html";
-        });
-      }
-
-      var carte5 = document.querySelector(".card");
-      if (carte5) {
-        carte5.addEventListener("click", function () {
-          window.location = "ibiza.html";
-        });
-      }
-
-      var carte6 = document.querySelector(".card");
-      if (carte6) {
-        carte6.addEventListener("click", function () {
-          window.location = "maldives.html";
-        });
-      }
-
-      // CSS
-      var elementsDecouvrir = document.querySelectorAll(".boxDecouvrir");
-
-      elementsDecouvrir.forEach(function (element) {
-        element.addEventListener("mouseover", function (event) {
-          event.target.style.textDecoration = "underline";
-        });
-
-        element.addEventListener("mouseout", function (event) {
-          event.target.style.textDecoration = "none";
-        });
-      });
 
       // JS POUR L'AFFICHAGE DES APPERCUS DES DESTINATIONS
 

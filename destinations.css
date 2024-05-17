@@ -70,24 +70,23 @@ nav .logo a span {
 
 .sous-menu {
   display: none;
+  margin-bottom: 30px;
   position: absolute;
   background-color: #111;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  z-index: 5;
-  padding: 1;
-  margin: 8px;
+  z-index: 1;
   border-radius: 5px;
-  width: max-content;
+  width: 120%;
   left: 50%;
   transform: translateX(-50%);
 }
 
 .sous-menu li {
-  padding: 10px 20px;
   margin: 0;
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   text-align: center;
+  list-style-type: none;
 }
 
 .sous-menu li:hover a {
@@ -103,7 +102,8 @@ nav .logo a span {
 }
 
 nav ul li a {
-  padding: 12px;
+  padding: 16px;
+  display: block;
 }
 
 .navbar li:hover .sous-menu {
@@ -115,18 +115,20 @@ nav ul li a {
   display: flex;
   align-items: center;
 }
-.menu li {
+.menu>li {
   position: relative;
-  margin: 0 15px;
   list-style-type: none;
+  padding: 0 15px;
 }
+
 .menu li a {
   color: #fff;
   font-size: 1.7rem;
+  text-decoration: none;
 }
 
-.menu li:hover .sous-menu {
-  display: block;
+.menuNav:hover + .sous-menu, .sous-menu:hover {
+  display: block; /* or display: flex; */
 }
 
 /* CSS POUR LA BOX CARD DESTINATION */
@@ -228,6 +230,10 @@ section {
   font-size: 1.1rem;
   display: flex;
   justify-content: center;
+}
+
+.blue {
+  color: #29d9d5 !important;
 }
 
 .itemsContainer {

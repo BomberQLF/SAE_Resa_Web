@@ -12,6 +12,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="yacht.css">
     <link rel="stylesheet" href="style.css">
@@ -19,6 +21,9 @@
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <header>
         <nav>
             <div class="logo">
@@ -37,7 +42,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a class="menuNav" href="catalogue.php">Catalogue</a>
+                    <a class="menuNav blue" href="catalogue.php">Catalogue</a>
                 </li>
                 <li>
                     <a class="menuNav" href="#">Bâteaux</a>
@@ -59,8 +64,8 @@
 
     <main>
         <section id="catalogue">
-            <h1>Catalogue de bateaux</h1>
-            <form action="catalogue.php" method="get">
+            <h1 data-aos="zoom-in">Catalogue de bateaux</h1>
+            <form data-aos="zoom-in" action="catalogue.php" method="get">
                 <label for="search" class="sr-only">Barre de recherche</label>
                 <input type="text" name="search" id="search" placeholder="Rechercher un modèle...">
                 <button type="submit">Rechercher</button>
@@ -100,7 +105,7 @@
                             // Sélectionner le premier fichier d'image
                             $firstImage = reset($images);
 
-                            echo '<div class="bateau">';
+                            echo '<div data-aos="zoom-in-down" data-aos-duration="1200" class="bateau">';
                             echo '<img src="' . $firstImage . '" alt="' . 'Voici notre bateau nommé ' . $yacht['modele'] . '">';
                             echo '<div class="details">';
                             echo '<h2>' . $yacht['modele'] . '</h2>';

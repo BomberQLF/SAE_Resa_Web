@@ -14,12 +14,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="slider.js"></script>
     <script src="script.js"></script>
     <title>Prestige Yacht</title>
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <header>
         <nav>
             <div class="logo">
@@ -67,7 +72,7 @@
     <!-- A propos section -->
     <section id="a-propos">
         <h3 class="title">à propos</h3>
-        <div class="img-desc">
+        <div data-aos="fade-left" data-aos-duration="3000" class="img-desc">
             <div class="left">
                 <img class="imgAbout" src="images/accueil-yacht.jpg">
             </div>
@@ -75,7 +80,7 @@
                 <h4>Plongez dans notre fascinante histoire et découvrez nous rapidement.</h4>
                 <p>Cliquez ci-dessus pour apprendre à nous connaitre et en apprendre davantage sur notre parcours
                     captivant.</p>
-                <a id="lireHover" href="#">Lire Plus</a>
+                <a id="lireHover" href="about.html">Lire Plus</a>
             </div>
         </div>
     </section>
@@ -90,7 +95,7 @@
                 </figure>
                 <div class="content">
                     <h4>
-                        LE BRIDGERTON
+                        Le Bridgerton
                     </h4>
                     <div class="more">
                         <a href="yacht.php?id=1">Réserver</a>
@@ -104,7 +109,7 @@
                 </figure>
                 <div class="content">
                     <h4>
-                        HADÈS 2000
+                        Hadès 2000
                     </h4>
                     <div class="more">
                         <a href="yacht.php?id=2">Réserver</a>
@@ -118,7 +123,7 @@
                 </figure>
                 <div class="content">
                     <h4>
-                        OCTAVIUS
+                        Octavius
                     </h4>
                     <div class="more">
                         <a href="yacht.php?id=3">Réserver</a>
@@ -132,7 +137,7 @@
                 </figure>
                 <div class="content">
                     <h4>
-                        LE COLOSSAL
+                        Le Colossal
                     </h4>
                     <div class="more">
                         <a href="yacht.php?id=4">Réserver</a>
@@ -146,7 +151,7 @@
                 </figure>
                 <div class="content">
                     <h4>
-                        CORBAC-X
+                        Corbac-X
                     </h4>
                     <div class="more">
                         <a href="yacht.php?id=5">Réserver</a>
@@ -160,7 +165,7 @@
                 </figure>
                 <div class="content">
                     <h4>
-                        VENTEX
+                        Ventex
                     </h4>
                     <div class="more">
                         <a href="yacht.php?id=6">Réserver</a>
@@ -194,7 +199,7 @@
         <h4 class="title">Destinations populaires</h4>
         <div class="content">
             <!-- boîte -->
-            <div class="box">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="box">
                 <img src="images/antibes-marina.jpeg" alt="">
                 <div class="content" id="carteAntibes">
                     <div>
@@ -206,7 +211,7 @@
                 </div>
             </div>
             <!-- boîte -->
-            <div class="box">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="box">
                 <img src="images/laMancheVignette.jpg" alt="">
                 <div class="content" id="carteLaManche">
                     <div>
@@ -218,7 +223,7 @@
                 </div>
             </div>
             <!-- boîte -->
-            <div class="box">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="box">
                 <img src="images/monacoVignette.jpg" alt="">
                 <div class="content" id="carteMonaco">
                     <div>
@@ -230,7 +235,7 @@
                 </div>
             </div>
             <!-- boîte -->
-            <div class="box">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="box">
                 <img src="images/corseVignette.jpg" alt="">
                 <div class="content" id="carteCorse">
                     <div>
@@ -242,7 +247,7 @@
                 </div>
             </div>
             <!-- boîte -->
-            <div class="box">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="box">
                 <img src="images/ibizaVignette.jpg" alt="">
                 <div class="content" id="carteIbiza">
                     <div>
@@ -254,7 +259,7 @@
                 </div>
             </div>
             <!-- boîte -->
-            <div class="box">
+            <div data-aos="zoom-in" data-aos-duration="1000" class="box">
                 <img src="images/maldivesVignette.jpg" alt="">
                 <div class="content" id="carteMaldives">
                     <div>
@@ -279,7 +284,7 @@
             $yachts = $stmt->fetchAll(PDO::FETCH_ASSOC);
             ?>
             <?php foreach ($yachts as $yacht): ?>
-                <div class="yacht-item">
+                <div data-aos="zoom-in-down" data-aos-duration="1000" class="yacht-item">
                     <img src="data:image/jpeg;base64,<?php echo base64_encode($yacht["image"]); ?>"
                         alt="Nos bateaux les plus récents" style="width:100%">
                     <h6 class="yacht-title"><?php echo $yacht["modele"]; ?></h6>

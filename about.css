@@ -16,7 +16,6 @@ h1 {
 
 h2 {
   color: black;
-  text-shadow: 1px 1px 28px #222;
 }
 
 p span {
@@ -159,6 +158,10 @@ main {
 .side-text {
   text-transform: uppercase;
   color: #29d9d5;
+}
+
+.blue {
+  color: #29d9d5 !important;
 }
 
 
