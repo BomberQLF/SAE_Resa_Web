@@ -84,6 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var prixTotalInput = document.getElementById("prix_total_hidden");
     // C'est un modèle ternaire utilisé aussi en PHP pour dire que si la valeur séléctionné dans le champ du second modele est vide alors total price, else price.
     prixTotalInput.value = secondModeleSelect.value !== "" ? totalPrice : price;
+    console.log(totalPrice);
 
     if (secondModeleSelect.value !== "") {
       var secondYachtId = secondModeleSelect.value;
@@ -96,12 +97,14 @@ document.addEventListener("DOMContentLoaded", function () {
       var secondYachtPrice = yachtPrices[secondYachtId];
 
       var totalPrice = price + secondDiffDays * secondYachtPrice;
+      console.log(totalPrice);
 
       if (yachtId === secondYachtId) {
         prixTotalDiv.textContent =
           "Erreur : Vous ne pouvez pas réserver le même bateau pour les deux options.";
       } else {
         prixTotalDiv.textContent = `Prix total : ${totalPrice} €`;
+        console.log(totalPrice);
       }
     }
   }

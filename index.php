@@ -326,7 +326,7 @@
             <div class="footer-section">
                 <p>Mentions légales</p>
                 <ul>
-                    <li><a href="#" class="lien-footer">Politique de confidentialité</a></li>
+                    <li><a href="mentions-legales.html" class="lien-footer">Politique de confidentialité</a></li>
                     <li><a href="termes-conditions.html" class="lien-footer">Termes & Conditions</a></li>
                 </ul>
             </div>

@@ -17,18 +17,24 @@ h2 {
   color: #29d9d5;
   margin-top: 20px;
   margin-bottom: 14px;
-  font-size: 3rem;
+  font-size: 3.6rem;
   text-align: center;
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-h2 p {
-  display: flex;
-  justify-content: center;
+h2,
+p {
+  margin: 0 auto;
+  max-width: 850px;
+}
+
+p {
+  color: white;
+  margin-bottom: 30px;
   text-align: center;
-  align-items: center;
+  font-size: 2rem;
 }
 
 .titre-banniere {
@@ -40,4 +46,11 @@ h2 p {
   margin: 120px auto 50px auto;
   width: 850px;
   padding: 18px;
+  text-align: center;
+}
+
+.container-mentions {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
 }
