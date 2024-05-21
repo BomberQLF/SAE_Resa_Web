@@ -8,6 +8,11 @@
   font-family: "Raleway", sans-serif;
 }
 
+
+.blue {
+  color: #29d9d5;
+}
+
 h1 {
   font-size: 5rem;
   color: #29d9d5;
@@ -72,13 +77,13 @@ main {
 .grid-item {
   padding: 20px;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold;
   transition: transform 0.3s;
 }
 
 .grid-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) !important; /* Le important est nécessaire afin d'écraser la priorité de l'animation AOS */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
@@ -159,9 +164,3 @@ main {
   text-transform: uppercase;
   color: #29d9d5;
 }
-
-.blue {
-  color: #29d9d5 !important;
-}
-
-

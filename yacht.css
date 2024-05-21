@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-
 :root {
   --color: #29d9d5;
   --background-color: #111;
@@ -477,6 +475,10 @@ input[type="submit"]:hover {
 
 #total-price {
   color: #fff;
+}
+
+.email-invalide {
+  background-color: red;
 }
 
 /* IA UTILISÉ POUR AJOUTER UN ICONE DE MENU DÉROULANT */
