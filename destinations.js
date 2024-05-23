@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
           // Ajouter un écouteur d'événement pour détecter quand la souris quitte la boîte
           element.addEventListener("mouseleave", function () {
             // Retirer l'effet de box shadow lorsque la souris quitte la boîte
-            this.style.boxShadow = "none"; // Retirer l'ombre portée
+            this.style.boxShadow = "none";
             this.style.transition = "box-shadow 0.8s ease";
           });
         });

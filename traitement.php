@@ -32,6 +32,7 @@
     if (isset($_POST['reserver'])) {
         // Intval pour convertir le prix total en un nombre entier et non une chaine de caractère
         $prix_total = intval($_POST['prix_total']); 
+        var_dump($prix_total);
     
         // Connexion à la base de données
         $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
@@ -50,11 +51,35 @@
         $stmt->bindParam(':modele', $_POST['modele']);
         $stmt->bindParam(':second_modele', $_POST['second_modele']);
 
-        // Vérifie si les dates pour le second bateau sont définies, sinon utilise NULL
+        // Vérifie si les dates pour le second bateau sont définies, sinon utilise NULL (C'est une méthode ternaire que j'utilise pour raccourcir le code)
         $second_date_debut = !empty($_POST['second_date_debut']) ? $_POST['second_date_debut'] : null;
         $second_date_fin = !empty($_POST['second_date_fin']) ? $_POST['second_date_fin'] : null;
         $stmt->bindParam(':second_date_debut', $second_date_debut);
         $stmt->bindParam(':second_date_fin', $second_date_fin);
+
+        // Section pour envoyer le mail à l'utilisateur ainsi qu'à moi
+        mail(...);
+        // Ici on récupère les éléments utiles du formulaire, et on défini les variables pour pouvoir les réutiliser lors de l'envoi de l'email.
+        $prenom = htmlspecialchars($_POST('prenom'));
+        $nom = htmlspecialchars($_POST('nom'));
+        $email = htmlspecialchars($_POST('email'));
+        $prix_total = htmlspecialchars($_POST('prix_total'));
+
+        // Ici on doit définir les paramètres qui constituent la fonction mail(), plutot que tout écrire dans les parenthèses, je vais simplement ajouter des variables car ca permet de globaliser ma fonction.
+        $toUser = $email;
+        $subjectUser = "Confirmation de réservation";
+        $messageUser = "Bonjour " . $prenom . " " . $nom . ", \n\n Merci d'avoir reservé l'un de nos majestueux Yacht de luxe !\r Nous vous prions de venir accompagner de votre porte-monnaie afin de payer la généreuse somme de " . $prix_total . " € !";
+        $headersUser = "De la part de : tom.murphy@resaweb.murphy.butmmi.o2switch.site";
+
+        // Section pour l'envoi du mail à moi même
+        $toMe = "tom.murphy@resaweb.murphy.butmmi.o2switch.site";
+        $subjectMe = "Nouvelle réservation";
+        $messageMe = "Bonjour Tom, l'utilisateur suivant à reserver un Yacht sur Prestige Yacht :" . "\n Prénom : $prenom" . "\nNom : $nom" . "\nAdresse Email : $email" . "\n\n Très bonne journée à toi patron.";
+
+        // Rajouter un if qui renvoie mail(variables user) && mail(variables moi)
+        // 
+        // 
+
 
         // Exécute la requête et vérifie le résultat
         if ($stmt->execute()) {
