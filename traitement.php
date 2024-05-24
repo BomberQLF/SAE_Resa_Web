@@ -77,9 +77,9 @@
             $toUser = $email;
             $subjectUser = "Confirmation de réservation";
             if (is_null($second_date_debut) && is_null($second_date_fin)) {
-                $messageUser = "Bonjour $prenom" . "$nom,\n\nMerci d'avoir réservé l'un de nos majestueux Yachts de luxe !\nNous vous rappelons que votre réservation a lieu du $date_debut au $date_fin.\nVeuillez venir accompagné de votre porte-monnaie afin de payer la généreuse somme de $prix_total € !";
+                $messageUser = "Bonjour $prenom" . "$nom,\n\nMerci d'avoir réservé l'un de nos majestueux Yachts de luxe !\nNous vous rappelons que votre réservation a lieu du $date_debut au $date_fin.\n\nVeuillez venir accompagné de votre porte-monnaie afin de payer la généreuse somme de $prix_total € ! \n\nCordialement,\nLa direction de Prestige Yacht.";
             } else {
-                $messageUser = "Bonjour $prenom $nom,\n\nMerci d'avoir réservé l'un de nos majestueux Yachts de luxe !\nNous vous rappelons que votre réservation a lieu du $date_debut au $date_fin pour votre premier Yacht réservé ainsi que du $second_date_debut au $second_date_fin pour votre second Yacht.\nVeuillez venir accompagné de votre porte-monnaie afin de payer la généreuse somme de $prix_total € !";
+                $messageUser = "Bonjour $prenom $nom,\n\nMerci d'avoir réservé l'un de nos majestueux Yachts de luxe !\nNous vous rappelons que votre réservation a lieu du $date_debut au $date_fin pour votre premier Yacht réservé.\nConcernant votre second Yacht réservé, les dates de réservation sont du $second_date_debut au $second_date_fin. \n\nVeuillez venir accompagné de votre porte-monnaie afin de payer la généreuse somme de $prix_total € !";
             }
             $headersUser = "From: tom.murphy@resaweb.murphy.butmmi.o2switch.site";
 
