@@ -614,9 +614,9 @@ body .carousel .list .item.activeOld {
 /* CSS DERNIÈRS YACHTS  */
 
 .derniers-bateaux {
-  padding: 50px 10%;
   background-color: #111;
   color: #fff;
+  margin: 150px 50px;
 }
 
 .derniers-bateaux h5 {
