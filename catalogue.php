@@ -82,8 +82,7 @@
             <div class="bateaux">
                 <?php
                 // Connexion à la base de données
-                $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
-
+                include("connexion.php");
                 // Préparation de la requête SQL pour récupérer les détails des bateaux
                 // Si prix-decroissant ne se trouve pas dans l'url, le catalogue classe automatiquement les bateaux par ordre croissant 'ASC'.
                 $orderBy = $_GET['tri'] === 'prix-decroissant' ? 'DESC' : 'ASC';

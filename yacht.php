@@ -27,7 +27,7 @@
 
     <?php
     // Connexion à la base de données
-    $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
+    include ("connexion.php");
 
     // Vérification si le paramètre 'id' est défini dans l'URL
     if (isset($_GET['id'])) {
@@ -129,11 +129,14 @@
                     </div>
                     <div class="descriptif-section">
                         <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Prix Par Jours</h3>
-                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["prixParJour"]; ?>€</h4>
+                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["prixParJour"]; ?>€
+                        </h4>
                         <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Vitesse</h3>
-                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["vitesse"]; ?> noeuds</h4>
+                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["vitesse"]; ?>
+                            noeuds</h4>
                         <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Longueur</h3>
-                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["longueur"]; ?> mètres</h4>
+                        <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["longueur"]; ?>
+                            mètres</h4>
                         <h3 data-aos="zoom-in-right" data-aos-duration="1200" class="descriptif">Cabines</h3>
                         <h4 data-aos="zoom-in-right" data-aos-duration="1200" class="bold"><?php echo $yacht["cabines"]; ?></h4>
                     </div>

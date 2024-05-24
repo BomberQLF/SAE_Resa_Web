@@ -278,7 +278,7 @@
         <h5>Nos derniers modèles</h5>
         <div class="yacht-list">
             <?php
-            $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
+            include ("connexion.php");
             $stmt = $db->prepare("SELECT id_bateaux, modele, cabines, prixParJour, image FROM sae_bateaux ORDER BY id_bateaux DESC LIMIT 3");
             $stmt->execute();
             $yachts = $stmt->fetchAll(PDO::FETCH_ASSOC);

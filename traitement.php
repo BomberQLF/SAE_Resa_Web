@@ -40,7 +40,7 @@
         var_dump($prix_total);
 
         // Connexion à la base de données
-        $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
+        include ("connexion.php");
 
         // Prépare la requête d'insertion
         $stmt = $db->prepare("INSERT INTO sae_reservation_client (id_bateaux, date_reservation, date_debut, date_fin, prix_total, nom, prenom, email, modele, second_modele, second_date_debut, second_date_fin) VALUES (:id_bateaux, NOW(), :date_debut, :date_fin, :prix_total, :nom, :prenom, :email, :modele, :second_modele, :second_date_debut, :second_date_fin)");
