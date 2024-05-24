@@ -35,7 +35,6 @@
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['reserver'])) {
         // Intval pour convertir le prix total en un nombre entier et non une chaine de caractère
         $prix_total = intval($_POST['prix_total']);
-        var_dump($prix_total);
 
         // Connexion à la base de données
         include ("connexion.php");
