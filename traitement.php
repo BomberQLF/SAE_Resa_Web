@@ -88,11 +88,6 @@
             $messageMe = "Bonjour Tom,\nL'utilisateur suivant a réservé un Yacht sur Prestige Yacht :\nPrénom : $prenom\nNom : $nom\nAdresse Email : $email\n\nTrès bonne journée à toi patron.";
             $headersMe = "From: tom.murphy@resaweb.murphy.butmmi.o2switch.site";
 
-            var_dump($toUser);
-            var_dump($subjectUser);
-            var_dump($messageUser);
-            var_dump($headersUser);
-
             if (mail($toUser, $subjectUser, $messageUser, $headersUser) && mail($toMe, $subjectMe, $messageMe, $headersMe)) {
                 echo "<h1>Votre réservation a été enregistrée avec succès</h1>";
                 echo "<p>Merci pour votre réservation. Veuillez vérifier votre boite mail afin de visionner le récapitulatif de votre réservation.</p>";
