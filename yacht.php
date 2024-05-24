@@ -26,9 +26,6 @@
     </script>
 
     <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
     // Connexion à la base de données
     $db = new PDO('mysql:host=localhost;dbname=sae_resa_web;port=8889', 'root', 'root');
 

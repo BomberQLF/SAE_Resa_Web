@@ -1,11 +1,9 @@
 # Sources :
 
-- ![Alt text](images/accueil-yacht.jpeg)
 - ![https://pixabay.com/fr/photos/antibes-france-%C3%A9t%C3%A9-fleurs-plantes-4495510/](images/antibesVignette.jpg)
 - ![Alt text](images/backgroundImage.jpg)
 - ![Alt text](images/backImage.jpg)
 - ![Alt text](images/corseVignette.jpg)
-- ![Alt text](images/ibizaVignette.jpg)
 - ![https://pixabay.com/fr/photos/paysage-mer-c%C3%B4tes-plage-ciel-eau-1584310/](images/laMancheVignette.jpg)
 - ![Alt text](images/maldivesVignette.jpg)
 - ![Alt text](images/monacoVignette.jpg)
@@ -19,3 +17,5 @@
 - ![ChatGPT-4](images/black-water.webp)
 
 Dans ma base de donnée j'ai décidé de seulement ajouté des images pour les 3 derniers bateaux qui me serviront à être affichés comme "Derniers produits mis en avant", j'ai préféré faire cela que de refaire tout un code comme dans yacht.php qui parcours toutes mes images dans un dossier.
+
+- Mon slider est issu d'une vidéo Youtube sur laquelle je me suis appuyé : 

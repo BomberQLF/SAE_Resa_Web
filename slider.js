@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Gestion du clic sur le bouton "next"
   nextBtn.onclick = () => {
-    active = active + 1 > lastPosition ? 0 : active + 1; // Aller à l'image suivante ou revenir à la première en utilisant une méthode ternaire
+    active = active + 1 > lastPosition ? 0 : active + 1; // Aller à l'image suivante en utilisant une méthode ternaire
     carousel.style.setProperty("--calculation", 1); // Définir une propriété CSS personnalisée
     setSlider();
   };

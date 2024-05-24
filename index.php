@@ -98,7 +98,7 @@
                         Le Bridgerton
                     </h4>
                     <div class="more">
-                        <a href="yacht.php?id=1">Réserver</a>
+                        <a href="formulaire.php?id=1">Réserver</a>
                         <a href="yacht.php?id=1">Voir Plus</a>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
                         Hadès 2000
                     </h4>
                     <div class="more">
-                        <a href="yacht.php?id=2">Réserver</a>
+                        <a href="formulaire.php?id=2">Réserver</a>
                         <a href="yacht.php?id=2">Voir Plus</a>
                     </div>
                 </div>
@@ -126,7 +126,7 @@
                         Octavius
                     </h4>
                     <div class="more">
-                        <a href="yacht.php?id=3">Réserver</a>
+                        <a href="formulaire.php?id=3">Réserver</a>
                         <a href="yacht.php?id=3">Voir Plus</a>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                         Le Colossal
                     </h4>
                     <div class="more">
-                        <a href="yacht.php?id=4">Réserver</a>
+                        <a href="formulaire.php?id=4">Réserver</a>
                         <a href="yacht.php?id=4">Voir Plus</a>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
                         Corbac-X
                     </h4>
                     <div class="more">
-                        <a href="yacht.php?id=5">Réserver</a>
+                        <a href="formulaire.php?id=5">Réserver</a>
                         <a href="yacht.php?id=5">Voir Plus</a>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                         Ventex
                     </h4>
                     <div class="more">
-                        <a href="yacht.php?id=6">Réserver</a>
+                        <a href="formulaire.php?id=6">Réserver</a>
                         <a href="yacht.php?id=6">Voir Plus</a>
                     </div>
                 </div>
