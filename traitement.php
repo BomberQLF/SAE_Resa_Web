@@ -31,8 +31,6 @@
 
 <body>
     <?php
-    error_reporting(E_ALL);
-    ini_set('display_errors', '1');
     // var_dump($_POST); exit;
     if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['reserver'])) {
         // Intval pour convertir le prix total en un nombre entier et non une chaine de caractère
