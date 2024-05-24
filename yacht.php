@@ -88,9 +88,10 @@
                     $dossier = "images/" . $_GET['id'];
                     if (is_dir($dossier)) {
                         // Parcourir le dossier et afficher les images
-                        $dir = opendir($dossier);
+                        $files = scandir($dossier);
+                        natcasesort($files);
                         $imageCount = 0; // Compteur pour les images que je récupuère
-                        while (($file = readdir($dir)) !== false && $imageCount < 7) {
+                        foreach ($files as $file) {
                             // Vérification si le fichier est une image
                             $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
                             if (in_array($ext, array("jpg", "jpeg", "png", "gif", "webp"))) {
@@ -101,20 +102,18 @@
                                     echo '<div class="xl">';
                                     echo '<img data-aos="zoom-in-down" data-aos-duration="1200" src="' . $dossier . '/' . $file . '" alt="">';
                                     echo '</div>';
-                                } else {
+                                } elseif ($imageCount == 2) {
                                     echo '<div class="sm">';
                                     echo '<img data-aos="zoom-in" data-aos-duration="1200" src="' . $dossier . '/' . $file . '" alt="">';
-                                    // Afficher deux images dans sm s'il reste des images à récupérer
-                                    $imageCount++;
-                                    if ($imageCount <= 7) {
-                                        $file = readdir($dir);
-                                        echo '<img data-aos="zoom-in" data-aos-duration="1200" src="' . $dossier . '/' . $file . '" alt="">';
-                                    }
+                                    echo '</div>';
+                                } else {
+                                    // Afficher les autres images
+                                    echo '<div class="sm">';
+                                    echo '<img data-aos="zoom-in" data-aos-duration="1200" src="' . $dossier . '/' . $file . '" alt="">';
                                     echo '</div>';
                                 }
                             }
                         }
-                        closedir($dir);
                     } else {
                         echo "Dossier d'images non trouvé pour cet ID.";
                     }
