@@ -212,7 +212,7 @@
             </div>
             <!-- boîte -->
             <div data-aos="zoom-in" data-aos-duration="1000" class="box">
-                <img src="images/laMancheVignette.jpg" alt="">
+                <img src="images/lamancheVignette.jpg" alt="">
                 <div class="content" id="carteLaManche">
                     <div>
                         <h4>La Manche</h4>
