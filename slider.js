@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+    // CODE du Slider appartenant à LunaDev (Youtube), qui a réalisé ce slider. J'ai regardé entièrement la vidéo une seule fois en mettant en pause souvent afin de comprendre le code et j'ai ensuite pu le refaire sans l'aide de la vidéo.
   // Récupération des éléments du DOM
   var prevBtn = document.getElementById("prev");
   var nextBtn = document.getElementById("next");
