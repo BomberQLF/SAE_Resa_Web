@@ -74,7 +74,7 @@
         <h3 class="title">à propos</h3>
         <div data-aos="fade-left" data-aos-duration="3000" class="img-desc">
             <div class="left">
-                <img class="imgAbout" src="images/accueil-yacht.jpg" alt="">
+                <img class="imgAbout" src="images/accueil-yacht.jpg">
             </div>
             <div class="right">
                 <h4>Plongez dans notre fascinante histoire et découvrez nous rapidement.</h4>

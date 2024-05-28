@@ -1,3 +1,11 @@
+:root {
+  --main-color: #29d9d5;
+  --text-color: #fff;
+  --background-color-dark: #111;
+  --background-color-light: #222;
+  --secondary-color: #4e4b44;
+}
+
 *,
 *::before,
 *::after {
@@ -6,18 +14,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 a {
@@ -107,7 +103,7 @@ nav ul li a {
   display: flex;
   align-items: center;
 }
-.menu>li {
+.menu > li {
   position: relative;
   list-style-type: none;
   padding: 0 15px;
@@ -119,7 +115,8 @@ nav ul li a {
   text-decoration: none;
 }
 
-.menuNav:hover + .sous-menu, .sous-menu:hover {
+.menuNav:hover + .sous-menu,
+.sous-menu:hover {
   display: block; /* or display: flex; */
 }
 
@@ -377,7 +374,6 @@ p {
   font-size: large;
 }
 
-
 /* CSS POUR LE FOOTER */
 
 .quote {
@@ -429,12 +425,11 @@ footer {
   text-decoration: underline;
 }
 
-
 /* ANIMATION PAR Louis Hoebregts à https://codepen.io/Mamboleoo/pen/BxMQYQ */
 
 @keyframes move {
   100% {
-      transform: translate3d(0, 0, 1px) rotate(360deg);
+    transform: translate3d(0, 0, 1px) rotate(360deg);
   }
 }
 
@@ -459,7 +454,6 @@ footer {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 
 .background span:nth-child(0) {
   color: #ffffff;

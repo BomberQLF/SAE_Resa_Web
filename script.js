@@ -23,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       })
+      // Je catch l'erreur au cas où une erreur a lieu.
       .catch(function (error) {
-        console.error("Erreur en fetchant les données JSON:", error);
+        console.log("Erreur en fetchant les données JSON:", error);
       });
   
     // Sélectionne tous les éléments avec la classe .menuNav
