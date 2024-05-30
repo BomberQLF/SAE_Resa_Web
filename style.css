@@ -14,18 +14,6 @@
   font-family: "Raleway", sans-serif;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 a {
   text-decoration: none;
 }
@@ -128,7 +116,7 @@ nav ul li a {
 }
 
 .menuNav:hover + .sous-menu, .sous-menu:hover {
-  display: block; /* or display: flex; */
+  display: block;
 }
 /* Home acceuil CSS */
 
