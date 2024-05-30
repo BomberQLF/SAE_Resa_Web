@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <script src="script.js"></script>
     <link rel="stylesheet" href="yacht.css">
     <link rel="stylesheet" href="style.css">

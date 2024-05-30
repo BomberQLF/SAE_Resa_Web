@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <script src="script.js"></script>
+    <link rel="shortcut icon" href="images/favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="yacht.css">
     <link rel="stylesheet" href="style.css">
     <title>Formulaire Reservation</title>
