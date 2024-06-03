@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Récupérer les éléments stockés dans mon fichier JSON
     fetch("mail.json")
       .then(function (response) {
-        return response.json(); // Convertit la réponse en JSON
+        return response.json();
       })
       .then(function (data) {
         console.log(data);
