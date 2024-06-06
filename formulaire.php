@@ -79,7 +79,7 @@
     
     <section id="formulaire">
         <h1 id="form-title">Réservation du Yacht</h1>
-        <form action="traitement.php" method="post">
+        <form action="traitement.php" method="post" id="no-bg">
             <label for="nom">Nom : <span class="formulaire-required">(Obligatoire)</span></label>
             <input type="text" id="nom" name="nom" required><br><br>
 
