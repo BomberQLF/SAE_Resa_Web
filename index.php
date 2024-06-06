@@ -176,10 +176,8 @@
             </div>
         </div>
         <div class="arrows">
-            <button id="prev" aria-label="Défile vers le bateau précédent"><i class="fa-solid fa-chevron-left"
-                    aria-hidden="true"></i></button>
-            <button id="next" aria-label="Défile vers le bateau suivant"><i class="fa-solid fa-chevron-right"
-                    aria-hidden="true"></i></button>
+            <button id="prev" aria-label="Défile vers le bateau précédent"><</button>
+            <button id="next" aria-label="Défile vers le bateau suivant">></button>
         </div>
         <div class="indicators">
             <div class="number" style="display:none;">02</div>
