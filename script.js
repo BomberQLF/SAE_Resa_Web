@@ -23,11 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         });
       })
-      // Je catch l'erreur au cas où une erreur a lieu.
-      .catch(function (error) {
-        console.log("Erreur en fetchant les données JSON:", error);
-      });
-  
+
     // Sélectionne tous les éléments avec la classe .menuNav
     var menuNav = document.querySelectorAll(".menuNav");
   
@@ -74,10 +70,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var prixTotalInput = document.getElementById("prix_total_hidden");
   
     var secondModeleSelect = document.getElementById("second_modele");
+    var secondDateDebutLabel = document.getElementById("hidden");
+    var secondDateFinLabel = document.getElementById("hide");
     var secondDateDebutInput = document.getElementById("second_date_debut");
     var secondDateFinInput = document.getElementById("second_date_fin");
+
   
     // Masque les champs de date pour le second modèle initialement
+    secondDateDebutLabel.style.display = "none";
+    secondDateFinLabel.style.display = "none";
     secondDateDebutInput.style.display = "none";
     secondDateFinInput.style.display = "none";
   
@@ -90,10 +91,14 @@ document.addEventListener("DOMContentLoaded", function () {
       if (secondModeleSelect.value !== "") {
         secondDateDebutInput.style.display = "block";
         secondDateFinInput.style.display = "block";
+        secondDateDebutLabel.style.display = "block";
+        secondDateFinLabel.style.display = "block";
         calculatePrice();
       } else {
         secondDateDebutInput.style.display = "none";
         secondDateFinInput.style.display = "none";
+        secondDateDebutLabel.style.display = "none";
+        secondDateFinLabel.style.display = "none";
         calculatePrice();
       }
     });
@@ -132,6 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
         // Vérifie si les deux modèles sélectionnés sont identiques
         if (yachtId === secondYachtId) {
+          // 1.C Règle OPQUAST numéro 80
           prixTotalDiv.textContent = "Erreur : Vous ne pouvez pas réserver le même bateau pour les deux options.";
         } else {
           // Conversion du totalPrice en entier avant de l'afficher et de l'envoyer

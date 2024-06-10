@@ -116,11 +116,11 @@
                     <?php }
                 } ?>
             </select>
-            <label for="second_date_debut">Date de début du second bateau : <span
+            <label id="hidden" for="second_date_debut">Date de début du second bateau : <span
                     class="formulaire-required">(Obligatoire)</span></label>
             <input type="date" id="second_date_debut" name="second_date_debut"><br><br>
 
-            <label for="second_date_fin">Date de fin du second bateau : <span
+            <label id="hide" for="second_date_fin">Date de fin du second bateau : <span
                     class="formulaire-required">(Obligatoire)</span></label>
             <input type="date" id="second_date_fin" name="second_date_fin"><br><br>
 

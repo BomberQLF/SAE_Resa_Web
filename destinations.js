@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Ajouter un écouteur d'événement pour détecter le survol de la souris
             element.addEventListener("mouseenter", function () {
               // Ajouter l'effet de box shadow lors du survol
-              this.style.boxShadow = "0 0 20px rgba(41, 217, 213, 0.7)"; // Utiliser rgba pour spécifier la couleur avec une transparence de 70%
+              this.style.boxShadow = "0 0 20px rgba(220, 211, 211, 0.7)";
               this.style.transition = "box-shadow 0.5s ease";
             });
   
