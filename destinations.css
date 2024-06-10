@@ -386,9 +386,8 @@ p {
 
 footer {
   background-color: #222;
-  height: 23vh;
   color: white;
-  padding: 20px 0;
+  padding: 20px 0 60px 0;
 }
 
 .footer-container {
