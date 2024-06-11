@@ -22,6 +22,7 @@
 <body>
     <header>
         <nav>
+            <a href="#formulaire" class="skip-link">Aller au contenu</a>
             <div class="logo">
                 <a id="prestigeLogo" href="index.php"> <span>Prestige</span> Yacht</a>
             </div>
@@ -60,7 +61,7 @@
 
     <?php
     // Connexion à la base de données
-    include("connexion.php");
+    include ("connexion.php");
     $stmt = $db->prepare("SELECT modele, id_bateaux, prixParJour FROM sae_bateaux ORDER BY modele ASC");
     $stmt->execute();
     $yachts = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -76,7 +77,7 @@
     echo '};';
     echo '</script>';
     ?>
-    
+
     <section id="formulaire">
         <h1 id="form-title">Réservation du Yacht</h1>
         <form action="traitement.php" method="post" id="no-bg">

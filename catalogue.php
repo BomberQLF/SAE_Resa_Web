@@ -27,6 +27,7 @@
     </script>
     <header>
         <nav>
+            <a href="#bateaux" class="skip-link">Aller au contenu</a>
             <div class="logo">
                 <a id="prestigeLogo" href="index.php"> <span>Prestige</span> Yacht</a>
             </div>
@@ -80,10 +81,10 @@
                 <a class="prix-tri" href="catalogue.php?tri=prix-croissant">Prix croissant</a>
                 <a class="prix-tri" href="catalogue.php?tri=prix-decroissant">Prix décroissant</a>
             </div>
-            <div class="bateaux">
+            <div class="bateaux" id="bateaux">
                 <?php
                 // Connexion à la base de données
-                include("connexion.php");
+                include ("connexion.php");
                 // Préparation de la requête SQL pour récupérer les détails des bateaux
                 // Si prix-decroissant ne se trouve pas dans l'url, le catalogue classe automatiquement les bateaux par ordre croissant 'ASC'.
                 $orderBy = $_GET['tri'] === 'prix-decroissant' ? 'DESC' : 'ASC';

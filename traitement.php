@@ -70,7 +70,7 @@
             $date_fin = htmlspecialchars($_POST['date_fin']);
             $second_date_debut = htmlspecialchars($_POST['second_date_debut']);
             $second_date_fin = htmlspecialchars($_POST['second_date_fin']);
-            
+
             $toUser = $email;
             $subjectUser = "Confirmation de réservation";
             if (empty($_POST['second_date_debut']) && empty($_POST['second_date_fin'])) {

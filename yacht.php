@@ -25,7 +25,6 @@
     <script>
         AOS.init();
     </script>
-
     <?php
     // Connexion à la base de données
     include ("connexion.php");
@@ -46,6 +45,7 @@
             ?>
             <header>
                 <nav>
+                    <a href="#s1" class="skip-link">Aller au contenu</a>
                     <div class="logo">
                         <a id="prestigeLogo" href="index.php"> <span>Prestige</span> Yacht</a>
                     </div>

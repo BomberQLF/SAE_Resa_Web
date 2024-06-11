@@ -28,6 +28,7 @@
     </script>
     <header>
         <nav>
+            <a href="#a-propos" class="skip-link">Aller au contenu</a>
             <div class="logo">
                 <a id="prestigeLogo" href="index.php"> <span>Prestige</span> Yacht</a>
             </div>
