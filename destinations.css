@@ -1,5 +1,5 @@
 :root {
-  --main-color: #29d9d5;
+  --main-color: #d59d22;
   --text-color: #fff;
   --background-color-dark: #111;
   --background-color-light: #222;
@@ -50,7 +50,7 @@ nav {
 
 nav .logo a {
   font-size: 3rem;
-  color: #29d9d5;
+  color: #d59d22;
 }
 nav .logo a span {
   color: #fff;
@@ -78,11 +78,11 @@ nav .logo a span {
 }
 
 .sous-menu li:hover a {
-  background-color: #1e90ff;
+  background-color: #d59d22;
 }
 
 .sous-menu li a:hover {
-  background-color: #1e90ff;
+  background-color: #d59d22;
 }
 
 .navbar li {
@@ -133,7 +133,7 @@ section {
   text-transform: capitalize;
   margin: 70px 0;
   font-weight: bold;
-  color: #29d9d5;
+  color: #d59d22;
   position: relative;
   margin-left: 15px;
   font-size: 1.8rem;
@@ -193,7 +193,7 @@ section {
   width: 500px;
   text-align: center;
   border-radius: 10px;
-  background-color: #29d9d5;
+  background-color: #d59d22;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -211,7 +211,7 @@ section {
   width: 90px;
   text-align: center;
   border-radius: 10px;
-  background-color: #29d9d5;
+  background-color: #d59d22;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
@@ -222,7 +222,7 @@ section {
 }
 
 .blue {
-  color: #29d9d5 !important;
+  color: #d59d22 !important;
 }
 
 .itemsContainer {
@@ -242,7 +242,7 @@ section {
 
 #blueColor {
   font-size: 2.4rem;
-  color: #29d9d5;
+  color: #d59d22;
   font-family: "Geologica", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -251,7 +251,7 @@ section {
 }
 
 #blue-title {
-  color: #29d9d5;
+  color: #d59d22;
   font-size: large;
 }
 
@@ -266,14 +266,14 @@ section {
 .card-text {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #29d9d5;
+  color: #d59d22;
   font-size: 1.5rem;
 }
 
 .itemsText {
   margin-top: 20px;
   margin-bottom: 20px;
-  color: #29d9d5;
+  color: #d59d22;
   font-size: 1.8rem;
 }
 
@@ -311,7 +311,7 @@ p {
   text-transform: capitalize;
   margin: 70px 0;
   font-weight: bold;
-  color: #29d9d5;
+  color: #d59d22;
   position: relative;
   margin-left: 15px;
   font-size: 1.8rem;
@@ -370,7 +370,7 @@ p {
 }
 
 #blue-title {
-  color: var(#29d9d5);
+  color: var(#d59d22);
   font-size: large;
 }
 

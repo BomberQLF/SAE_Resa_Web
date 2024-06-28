@@ -1,5 +1,5 @@
 :root {
-  --color: #29d9d5;
+  --color: #d59d22;
   --background-color: #111;
   --w-column: 200px;
 }
@@ -74,7 +74,7 @@ nav {
 
 nav .logo a {
   font-size: 3rem;
-  color: #29d9d5;
+  color: #d59d22;
 }
 nav .logo a span {
   color: #fff;
@@ -106,11 +106,11 @@ nav .logo a span {
 }
 
 .sous-menu li:hover a {
-  background-color: #1e90ff;
+  background-color: #d59d22;
 }
 
 .sous-menu li a:hover {
-  background-color: #1e90ff;
+  background-color: #d59d22;
 }
 
 .navbar li {
@@ -164,7 +164,7 @@ nav ul li a {
 #home h1 {
   font-size: 6rem;
   margin-bottom: 10px;
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 #home h2 {
@@ -201,7 +201,7 @@ nav ul li a {
 }
 
 #lireHover:hover {
-  background-color: #29d9d5;
+  background-color: #d59d22;
   color: black;
   transition: 0.6s;
 }
@@ -210,7 +210,7 @@ nav ul li a {
   text-transform: capitalize;
   margin: 70px 0;
   font-weight: bold;
-  color: #29d9d5;
+  color: #d59d22;
   position: relative;
   margin-left: 15px;
   font-size: 1.95rem;
@@ -244,7 +244,7 @@ nav ul li a {
   width: 100%;
   height: 100%;
   position: relative;
-  box-shadow: 0 0 10px #29d9d5;
+  box-shadow: 0 0 10px #d59d22;
 }
 .img-desc .left::after {
   position: absolute;
@@ -252,7 +252,7 @@ nav ul li a {
   right: 10px;
   content: "";
   height: 100%;
-  background-color: #29d9d5;
+  background-color: #d59d22;
   width: 100%;
   z-index: -1;
 }
@@ -267,8 +267,8 @@ nav ul li a {
   margin-bottom: 36px;
 }
 .img-desc .right a {
-  border: 1px solid #29d9d5;
-  color: #29d9d5;
+  border: 1px solid #d59d22;
+  color: #d59d22;
   font-size: 0.9rem;
   padding: 8px 25px;
   font-weight: bold;
@@ -296,7 +296,7 @@ nav ul li a {
 }
 
 .carousel .list .item h4 {
-  color: #29d9d5;
+  color: #d59d22;
   text-shadow: 2px 2px 4px #000;
 }
 
@@ -342,7 +342,7 @@ nav ul li a {
   height: 50px;
   color: #ffea7c;
   font-size: 2em;
-  border: 1px solid #659cdf;
+  border: 1px solid #d59d22;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -424,16 +424,6 @@ nav ul li a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.carousel .list .more .link-reserver {
-  background-image: linear-gradient(to right, #81baa0, #46a39c);
-}
-
-.carousel .list .more .link-voirplus {
-  border: 2px solid transparent;
-  background: linear-gradient(#242745, #242745) padding-box,
-    linear-gradient(to right, #81baa0, #46a39c) border-box;
-}
-
 .carousel .list .more a:hover {
   color: #fff;
   text-decoration: underline;
@@ -512,7 +502,7 @@ body .carousel .list .item .content .more {
 
 body .carousel .list .item .content h4 {
   transition-delay: 0.5s;
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 body .carousel .list .item .content .description {
@@ -587,7 +577,7 @@ body .carousel .list .item.activeOld {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #215e9f;
+  background-color: #d59d22;
   text-align: center;
   align-items: center;
   transform: translateX(100%);
@@ -620,7 +610,7 @@ body .carousel .list .item.activeOld {
   display: ruby; /* C'est le seul display qui ne casse pas la disposition de mes textes dans ma box et qui me permet de modifier la height */
 }
 .box:hover {
-  box-shadow: 0 0 10px #29d9d5;
+  box-shadow: 0 0 10px #d59d22;
 }
 .box:hover .content {
   cursor: pointer;
@@ -639,7 +629,7 @@ body .carousel .list .item.activeOld {
   font-size: 3.3rem;
   margin-bottom: 30px;
   text-align: center;
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 .yacht-list {
@@ -682,7 +672,7 @@ body .carousel .list .item.activeOld {
   font-size: 2rem;
   text-align: center;
   text-transform: uppercase;
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 .yacht-item .yacht-details {
@@ -698,7 +688,7 @@ body .carousel .list .item.activeOld {
 .yacht-item .voir-plus {
   display: block;
   width: 100%;
-  background-color: #29d9d5;
+  background-color: #d59d22;
   color: black;
   padding: 15px 0;
   text-align: center;
@@ -710,7 +700,7 @@ body .carousel .list .item.activeOld {
 }
 
 .yacht-item .voir-plus:hover {
-  background-color: #68b8dd; 
+  background-color: #d59d22; 
 }
 
 
@@ -757,5 +747,5 @@ footer {
 }
 
 .blue {
-  color: #29d9d5 !important;
+  color: #d59d22 !important;
 }

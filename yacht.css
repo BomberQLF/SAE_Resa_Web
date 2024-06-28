@@ -1,5 +1,5 @@
 :root {
-  --color: #29d9d5;
+  --color: #d59d22;
   --background-color: #111;
   --color: #fff;
   --w-column: 200px;
@@ -45,7 +45,7 @@ nav {
 
 nav .logo a {
   font-size: 3rem;
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 nav .logo a span {
@@ -74,11 +74,11 @@ nav .logo a span {
 }
 
 .sous-menu li:hover a {
-  background-color: #1e90ff;
+  background-color: #d59d22;
 }
 
 .sous-menu li a:hover {
-  background-color: #1e90ff;
+  background-color: #d59d22;
 }
 
 .navbar li {
@@ -175,7 +175,7 @@ section {
 #s2 > div:nth-child(1) > h1 {
   font-size: 5rem;
   font-weight: 700;
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 #s2 > div:nth-child(1) > h2 {
@@ -193,7 +193,7 @@ section {
 }
 
 button {
-  background-color: #29d9d5;
+  background-color: #d59d22;
   color: black;
   padding: 10px 180px;
   margin-top: 16px;
@@ -217,7 +217,7 @@ button span {
 }
 
 button:hover {
-  background-color: #1aa9a5;
+  background-color: #b88310;
 }
 
 .descriptif-section {
@@ -227,7 +227,7 @@ button:hover {
 .descriptif {
   font-size: 2.25rem;
   padding-top: 10px;
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 .bold {
@@ -262,7 +262,7 @@ h6 {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 30px;
-  color: #29d9d5;
+  color: #d59d22;
   margin-top: 45px;
 }
 
@@ -328,7 +328,7 @@ h6 {
 }
 
 .blue {
-  color: #29d9d5 !important;
+  color: #d59d22 !important;
 }
 
 .btn-reserver,
@@ -357,7 +357,7 @@ h6 {
 #lien-reserver {
   display: flex;
   padding: 10px 20px;
-  background-color: #29d9d5;
+  background-color: #d59d22;
   color: black;
   justify-content: center;
   text-decoration: none;
@@ -372,7 +372,7 @@ h6 {
 }
 
 #lien-reserver:hover {
-  background-color: #1aa9a5;
+  background-color: #d49714;
 }
 
 .prix-tri {
@@ -381,13 +381,13 @@ h6 {
 }
 
 .prix-tri:nth-child(1) {
-  color: #29d9d5;
+  color: #d59d22;
   text-decoration: none;
   margin-left: 55px;
 }
 
 .prix-tri:nth-child(2) {
-  color: #29d9d5;
+  color: #d59d22;
   text-decoration: none;
   margin-left: 10px;
 }
@@ -405,7 +405,7 @@ h6 {
 }
 
 #form-title {
-  color: #29d9d5;
+  color: #d59d22;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 30px;
@@ -448,7 +448,7 @@ select {
 input[type="submit"] {
   width: 100%;
   padding: 15px;
-  background-color: #29d9d5;
+  background-color: #d59d22;
   color: black;
   border: none;
   border-radius: 5px;
@@ -458,11 +458,11 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #1aa9a5;
+  background-color: #d59d22;
 }
 
 .formulaire-required {
-  color: #29d9d5;
+  color: #d59d22;
 }
 
 #prix-total-input {
@@ -471,7 +471,7 @@ input[type="submit"]:hover {
 }
 
 #prix-total {
-  color: #29d9d5;
+  color: #d59d22;
   font-size: 1.4rem;
   margin-bottom: 10px;
 }

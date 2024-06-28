@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     menuNav.forEach(function (navBarName) {
       navBarName.addEventListener("mouseover", function () {
         this.style.transition = "color 0.5s ease";
-        this.style.color = "#29d9d5"; 
+        this.style.color = "#d59d22"; 
       });
   
       navBarName.addEventListener("mouseout", function () {
